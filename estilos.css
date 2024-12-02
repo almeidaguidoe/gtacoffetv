@@ -1,0 +1,640 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Montserrat", sans-serif;
+    background: #ffe6f5;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.oculto {
+    display: none;
+}
+
+.links-generales {
+    text-decoration: none;
+    color: #07ad4c;
+    font-weight: 600;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 250px auto;
+}
+
+/*----------- HEADER ------------*/
+
+.header {
+    background-image: url('./img/header-fondo-cielo.png');
+    background-repeat: repeat-x;
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    width: 100%;
+
+}
+
+.header__imagen {
+    height: 100%;
+}
+
+/*----------------- ASIDE------------------*/
+
+.aside {
+    padding: 10px 10px 0px 10px;
+    background: #ffe6f5;
+    background-image: url('./img/aside-nes-bottom.png');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+    transition: 1s linear all;
+
+    grid-row: span 2;
+}
+
+.aside__contenedor {
+    width: 100%;
+    background: #5e0359;
+    border-radius: 15px;
+}
+
+.aside__titulo {
+    font-size: 24px;
+    color: #fff;
+    margin: 10px;
+}
+
+
+/*----------------- NAVEGADOR --------------------*/
+
+.navegador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navegador__contenedor-botones {
+    background: #ee9c9c;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+.navegador__botones {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    padding: 3px;
+    background: #ffffff;
+    border-radius: 6px;
+    transition: .5s ease all;
+}
+
+.navegador__botones:hover {
+    background: #5e0359;
+    color: #fff;
+}
+
+/*-------------------- REDES ------------------*/
+
+.redes__contenedor {
+    background: #ee9c9c;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.redes__link {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 6px;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: .5s ease all;
+}
+
+.redes__link:hover {
+    color:#5e0359;
+}
+
+.redes__titulos {
+    text-align: center;
+    font-size: 18px;
+}
+
+.redes__link i{
+    font-size: 60px;
+}
+
+/*----------------- BOTON MOSTRAR MENU LATERAL ----------*/
+
+.boton-mostrar-menu-lateral {
+    background:#ee9c9c;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: -100px;
+    top: 50px;
+    opacity: 0.8;
+    text-align:center;
+    vertical-align: middle;
+    transition: 0.5s linear all;
+    cursor: pointer;
+}
+
+.boton-mostrar-menu-lateral:hover {
+    opacity: 1;
+}
+
+.boton-mostrar-menu-lateral i {
+    color: #fff;
+    line-height: 80px;
+    font-size: 40px;
+}
+
+.aside__boton-cerrar-menu {
+    text-align: right;
+    font-size: 24px;
+    color:#5e0359;
+    align-self: flex-end;
+    display: none;
+    cursor: pointer;
+}
+
+/*----------------- ARTÍCULOS --------------------*/
+
+
+.titulo-ppal {
+    width: 100%;
+    font-size: calc(20px + 2vw);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(to bottom, #af0f5f,#753375)
+
+}
+
+
+
+.contenedor-articulos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    background: linear-gradient(to bottom, #753375,#136fbb)
+}
+
+.articulos {
+    background: #d8ebf0;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.titulos-articulos {
+    font-size: calc(18px + 1vw);
+    margin: 10px;
+}
+
+.parrafos-articulos {
+    font-size: 20px;
+    text-align: justify;
+    line-height: 30px;
+    text-indent: 20px;
+}
+
+.fotos-articulos {
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.foto-intro-1 {
+    float: right;
+    width: 500px;
+}
+
+.foto-argumento-1 {
+    float: left;
+    width: 400px;
+}
+
+.foto-argumento-2 {
+    float: right;
+    width: 400px;
+}
+
+/*---------------- ARTICULO NOVEDADES --------*/
+
+.articulos__novedades {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.novedades__titulo-principal {
+    width: 100%;
+    grid-column: span 3;
+}
+
+.novedades__grupo {
+    background: #fff;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+
+}
+
+.novedades__titulo {
+    font-size: calc(16px + 0.5vw);
+    text-align: center;
+}
+
+.novedades__img {
+    border-radius: 15px;
+    width: 80%;
+}
+
+.novedades__texto {
+    font-size: 16px;
+    text-indent: 15px;
+    text-align: justify;
+}
+
+.novedades__link {
+    text-decoration: none;
+    font-weight: 600;
+    color:#5e0359;
+    font-size: 20px;
+    transition: .5s ease all;
+}
+
+.novedades__link:hover {
+    text-decoration: underline;
+    color:#ee9c9c;
+}
+
+/*---------------------- PÁGINA PERSONAJES ------------*/
+
+.personajes__contenedor-ppal {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.personajes__grupo_titulo-articulos {
+    display: flex;
+    flex-direction: column;
+}
+
+.personajes__contenedor-articulos {
+    background: linear-gradient(to bottom, #753375,#136fbb);
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.personajes__categoria {
+    color: #fff;
+    font-size: calc(20px + 0.8vw);
+    padding: 10px;
+    border-bottom: 4px solid #ee9c9c;
+}
+
+.personaje__titulo {
+    font-size: calc(18px + 1vw);
+    padding: 10px 0px;
+}
+
+.foto-pj {
+    float: left;
+    width: 250px;
+}
+
+
+.foto-banda {
+    float: left;
+    width: 350px;
+}
+
+.personajes__contenedor-articulos-pequeños {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.personajes__articulos-pequeños {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*----------- INDICE PERSONAJES -------*/
+
+.personajes__indice {
+    background:#0c035e;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    transition: 1s linear all;
+}
+
+
+
+.personajes__lista-primaria {
+    width: 250px;
+    padding: 10px;
+}
+
+.personajes__lista-primaria a {
+    text-decoration: none;
+    color: #fff;
+    transition: .5s ease all;
+}
+
+.personajes__lista-primaria a:hover {
+    color:#136fbb;
+}
+
+.personajes__item-lista-primaria {
+    list-style-type: none;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 5px 0px;
+    border-bottom: 3px solid #ee9c9c;
+}
+
+.personajes__lista-secundaria {
+    margin-left: 10px;
+    padding: 5px 0px;
+}
+
+.personajes__item-lista-secundaria {
+    list-style-type: none;
+    font-size: 16px;
+}
+
+.item-banda {
+    font-weight: 600;
+}
+
+.personajes__lista-terciaria {
+    margin-left: 10px;
+    padding: 5px 0px;
+}
+
+.personajes__item-lista-terciaria {
+    list-style-type: none;
+    font-weight: 14px;
+}
+
+
+/*-------------BOTON MOSTRAR INDICE PERSONAJES -------*/
+
+.boton-mostrar-indice-personajes {
+    background: #0c035e;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: -100px;
+    top: 50px;
+    opacity: 0.8;
+    text-align:center;
+    vertical-align: middle;
+    transition: 0.5s linear all;
+    cursor: pointer;
+}
+
+
+
+.boton-mostrar-indice-personajes:hover {
+    opacity: 1;
+}
+
+.boton-mostrar-indice-personajes i {
+    color: #fff;
+    line-height: 80px;
+    font-size: 40px;
+}
+/*
+.aside__boton-cerrar-menu {
+    text-align: right;
+    font-size: 24px;
+    color:#5e0359;
+    align-self: flex-end;
+    display: none;
+    cursor: pointer;
+}
+*/
+
+/*##################### PÁGINA LUGARES #################*/
+
+/*---------- SECCIÓN MAPAS ------------*/
+
+.articulos-mapas {
+    display: flex;
+    flex-direction: column;
+}
+
+.foto-mapa {
+    align-self: center;
+}
+
+/*---------------------- FOOTER ---------------*/
+
+.footer {
+    background:#02213a;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    grid-column: span 2;
+}
+
+.footer__texto {
+    color: #fff;
+    font-weight: 600;
+    font-size: calc(12px + 0.2vw);
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+} 
+
+.footer__grupo-logo {
+    width: 40%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer__grupo-info-1,
+.footer__grupo-info-2 {
+    width: 30%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.footer__logo-voglinn-games {
+    height: 130px;
+    width: 130px;
+}
+
+/*------------- BOTÓN DE SUBIR ARRIBA ----------*/
+
+.boton-subir-arriba {
+    position: fixed;
+    right: 0px;
+    bottom: 60px;
+    width: 50px;
+    height: 50px;
+    background: rgba(163,163,163,0.8);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    font-size: 30px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px;
+    transition: .5s ease all;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+}
+
+.boton-subir-arriba:hover {
+    background: rgba(59,59,59,0.8);
+    color: #fff;
+}
+
+/*-------- MEDIA QUERIES -----------*/
+
+@media only screen and (max-width:1200px) {
+    .foto-intro-1 {
+        float:none;
+        width: 100%;
+        margin: 10px 0px;
+    }
+
+    .foto-argumento-1 {
+        float:none;
+        width: 100%;
+        margin: 10px 0px;
+    }
+
+    .foto-argumento-2 {
+        float:none;
+        width: 100%;
+        margin: 10px 0px;
+    }
+
+    .articulos__novedades {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .novedades__titulo-principal {
+        grid-column: span 2;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .aside {
+        position: absolute;
+        left: -300px;
+    }
+
+    .aside__mostrar {
+        left: 0px;
+    }
+    
+    .boton-mostrar-menu-lateral {
+        left: 0px;
+    }
+
+    .aside__boton-cerrar-menu {
+        display: block;
+    }
+
+    .main {
+        grid-template-columns: auto;
+    }
+
+    .personajes__indice {
+        position: absolute;
+        right: -300px;
+    }
+
+    .boton-mostrar-indice-personajes {
+        right: 0px;
+    }
+
+
+
+}
+
+@media only screen and (max-width:600px) {
+    .header {
+        justify-content: center;
+    }
+
+    .header__imagen-lados {
+        display: none;
+    }
+
+    .footer {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .footer__grupo-logo {
+        width: 100%;
+    }
+
+    .footer__grupo-info-1,
+    .footer__grupo-info-2 {
+    width: 100%;
+    padding: 10px;
+    }
+
+    .articulos__novedades {
+        grid-template-columns: 1fr;
+    }
+
+    .novedades__titulo-principal {
+        grid-column: span 1;
+    }
+}
