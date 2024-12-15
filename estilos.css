@@ -470,6 +470,13 @@ html {
     align-self: center;
 }
 
+/*---------- SECCIÓN LOCALES DE COMIDA ------------*/
+
+.foto-locales-de-comida-der {
+    float: right;
+    max-width: 100%;
+}
+
 /*---------------------- FOOTER ---------------*/
 
 .footer {
