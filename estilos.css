@@ -490,9 +490,9 @@ html {
     
 }
 
-.foto-locales-de-comida-der {
+.foto-locales-frente {
     float: right;
-    max-width: 100%;
+    max-width: 700px;
 }
 
 .articulos-lugares-parte-superior {
@@ -534,9 +534,6 @@ html {
 /*---------- SECCIÓN LOCALES DE ROPA ------------*/
 
 .locales-de-ropa__seccion-ropa-a-la-venta {
-    
-
-    
     width: 100%;
     height: auto;
     padding: 10px;
@@ -584,11 +581,13 @@ html {
 .ropa-a-la-venta__figure {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .ropa-a-la-venta__imagen {
     border-radius: 15px;
-    max-width: 100%;
+    max-width:fit-content;
+    /*object-fit: contain;*/
     height: 320px;
 }
 
