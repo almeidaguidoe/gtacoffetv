@@ -530,6 +530,49 @@ html {
     font-family: "Montserrat", sans-serif;
 }
 
+/*---------- SECCIÓN LOCALES DE ROPA ------------*/
+
+.locales-de-ropa__seccion-ropa-a-la-venta {
+    width: 100%;
+    height: 100px;
+    margin-bottom: -15px;
+    background: linear-gradient(to bottom, #d8ebf0 10%, #0c035e 90%);
+
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.titulos__seccion-ropa-a-la-venta {
+    color: #5e0359;
+    font-size: 25px;
+    margin-left: 10px;
+
+}
+
+.ropa-a-la-venta__seccion-tipo-de-prenda {
+    width: 100%;
+}
+
+.titulos__tipo-de-prenda {
+    color: #fff;
+    font-size: 20px;
+}
+
+.ropa-a-la-venta__figure {
+
+}
+
+.ropa-a-la-venta__imagen {
+
+}
+
+.ropa-a-la-venta__caption {
+    
+}
+
 /*---------------------- FOOTER ---------------*/
 
 .footer {
