@@ -478,6 +478,7 @@ html {
 
 .foto-mapa {
     align-self: center;
+    max-width: 100%;
 }
 
 /*---------- SECCIÓN LOCALES DE COMIDA ------------*/
@@ -533,12 +534,18 @@ html {
 /*---------- SECCIÓN LOCALES DE ROPA ------------*/
 
 .locales-de-ropa__seccion-ropa-a-la-venta {
-    width: 100%;
-    height: 100px;
-    margin-bottom: -15px;
-    background: linear-gradient(to bottom, #d8ebf0 10%, #0c035e 90%);
+    
 
+    
+    width: 100%;
+    height: auto;
     padding: 10px;
+
+    background: linear-gradient(to bottom,
+    #422bc4 10%, #21809b 50%, #422bc4 90%);
+    border-radius: 15px;
+
+
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -546,31 +553,50 @@ html {
 }
 
 .titulos__seccion-ropa-a-la-venta {
-    color: #5e0359;
-    font-size: 25px;
-    margin-left: 10px;
 
+    color: #fff;
+    font-size: calc(25px + 1vh);
+    text-align: center;
 }
 
 .ropa-a-la-venta__seccion-tipo-de-prenda {
     width: 100%;
+    padding: 10px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 10px;
 }
 
 .titulos__tipo-de-prenda {
     color: #fff;
-    font-size: 20px;
+    font-size: calc(20px + 1vh);
+    padding-left: 15px;
+    border-bottom: 3px solid #ffe6f5;
+    width: 100%;
+    /*
+    align-self: flex-start;
+    justify-self: flex-start;
+    */
 }
 
 .ropa-a-la-venta__figure {
-
+    display: flex;
+    flex-direction: column;
 }
 
 .ropa-a-la-venta__imagen {
-
+    border-radius: 15px;
+    max-width: 100%;
+    height: 320px;
 }
 
 .ropa-a-la-venta__caption {
-    
+    text-align: center;
+    font-size: calc(10px + 1vh);
+    color: #fff;
+    font-style: italic;
 }
 
 /*---------------------- FOOTER ---------------*/
