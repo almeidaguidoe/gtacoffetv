@@ -27,8 +27,8 @@ html {
 }
 
 .main {
-    display: grid;
-    grid-template-columns: 250px auto;
+    display: flex;
+    flex-direction: row;
 }
 
 .audios {
@@ -56,19 +56,20 @@ html {
 .aside {
     padding: 10px 10px 0px 10px;
     background: #ffe6f5;
+
+
     background-image: url('./img/aside-nes-bottom.png');
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
-    width: 250px;
+
+
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
     justify-content: flex-start;
     transition: 1s linear all;
-
-    grid-row: span 4;
 }
 
 .aside__contenedor {
@@ -194,6 +195,10 @@ html {
 
 /*----------------- ARTÍCULOS --------------------*/
 
+.seccion-principal {
+    height: 100%;
+
+}
 
 .titulo-ppal {
     width: 100%;
@@ -429,6 +434,7 @@ html {
 }
 
 
+
 /*-------------BOTON MOSTRAR INDICE PERSONAJES -------*/
 
 .boton-mostrar-indice-personajes {
@@ -468,6 +474,78 @@ html {
 */
 
 /*##################### PÁGINA LUGARES #################*/
+
+/*----------- INDICE LUGARES -------*/
+
+.lugares__indice {
+    background-color: #753375;
+    padding: 10px;
+
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+}
+
+.lugares-indice__titulo-ppal {
+    color: #fff;
+    font-size: calc(20px + 0.8vw);
+    padding: 10px;
+    border-bottom: 4px solid #07ad4c;
+    width: 100%;
+
+
+}
+
+.lugares-indice__contenedor-ppal {
+    
+    display: flex;
+    flex-direction: row;
+
+    background-color:#ffe6f5;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.lugares-indice__enlaces {
+    color: #000;
+    text-decoration: none;
+    transition: .3s ease all;
+}
+
+.lugares-indice__enlaces:hover {
+    color: #07ad4c;
+}
+
+.lugares-indice__contenedor-items-primarios {
+
+    padding-left: 10px;
+    width: 25%;
+
+    border-left: 3px solid #5e0359;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.lugares-indice__item-primario {
+    list-style-type: none;
+    font-size: calc(14px + 0.5vw);
+    font-weight: 600;
+
+}
+
+.lugares-indice__contenedor-items-secundarios {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.lugares-indice__item-secundario {
+    list-style-type: none;
+    color: #000;
+    font-size: calc(10px + 0.5vw);
+    padding-left: 10px;
+}
 
 /*---------- SECCIÓN MAPAS ------------*/
 
