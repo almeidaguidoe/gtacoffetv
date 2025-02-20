@@ -488,7 +488,7 @@ html {
 
 .lugares-indice__titulo-ppal {
     color: #fff;
-    font-size: calc(20px + 0.8vw);
+    font-size: calc(25px + 0.8vw);
     padding: 10px;
     border-bottom: 4px solid #07ad4c;
     width: 100%;
@@ -499,7 +499,7 @@ html {
 .lugares-indice__contenedor-ppal {
     
     display: flex;
-    flex-direction: row;
+    flex-flow: row nowrap;
 
     background-color:#ffe6f5;
     border-radius: 15px;
@@ -529,7 +529,7 @@ html {
 
 .lugares-indice__item-primario {
     list-style-type: none;
-    font-size: calc(14px + 0.5vw);
+    font-size: calc(16px + 0.6vw);
     font-weight: 600;
 
 }
@@ -543,7 +543,7 @@ html {
 .lugares-indice__item-secundario {
     list-style-type: none;
     color: #000;
-    font-size: calc(10px + 0.5vw);
+    font-size: calc(14px + 0.4vw);
     padding-left: 10px;
 }
 
@@ -571,11 +571,11 @@ html {
 .foto-locales-frente {
     float: right;
     max-width: 700px;
+    
 }
 
 .articulos-lugares-parte-superior {
     width: 100%;
-
 }
 
 .cuadro-con-imagenes {
@@ -585,7 +585,7 @@ html {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
-    gap: 10px;
+    gap: 15px;
     justify-content: center;
 }
 
@@ -600,13 +600,15 @@ html {
 
 .imagen-captura-lugar {
     border-radius: 15px;
-    height: 300px;
+    max-height: 300px;
+    max-width: 100%;
     object-fit: contain;
 }
 
 .caption-imagen {
     font-style: italic;
     font-family: "Montserrat", sans-serif;
+    text-align: center;
 }
 
 /*---------- SECCIÓN LOCALES DE ROPA ------------*/
@@ -664,9 +666,8 @@ html {
 
 .ropa-a-la-venta__imagen {
     border-radius: 15px;
-    max-width:fit-content;
     /*object-fit: contain;*/
-    height: 320px;
+    max-height: 320px;
 }
 
 .ropa-a-la-venta__caption {
@@ -785,7 +786,7 @@ html {
 @media only screen and (max-width:900px) {
     .aside {
         position: absolute;
-        left: -300px;
+        left: -350px;
     }
 
     .aside__mostrar {
@@ -817,7 +818,22 @@ html {
         right: 0px;
     }
 
+    .fotos-articulos {
+        margin: 0px;
+    }
 
+    .foto-locales-frente {
+        max-width: 100%;
+        float: none;
+    }
+
+    .lugares-indice__contenedor-ppal {
+        flex-flow: row wrap;
+    }
+
+    .lugares-indice__contenedor-items-primarios {
+        width: 50%;
+    }
 
 }
 
@@ -845,6 +861,13 @@ html {
     padding: 10px;
     }
 
+    .articulos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
     .articulos__novedades {
         grid-template-columns: 1fr;
     }
@@ -852,12 +875,31 @@ html {
     .novedades__titulo-principal {
         grid-column: span 1;
     }
-}
 
-@media only screen and (max-width:600px) {
-    .articulos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .locales-de-ropa__seccion-ropa-a-la-venta {
+        padding: 0px;
+    }
+
+    .ropa-a-la-venta__imagen {
+        width: 100%;
+        max-width: fit-content;
+        height: auto;
+    }
+
+    .lugares-indice__contenedor-ppal {
+        flex-flow: column nowrap;
+    }
+
+    .lugares-indice__contenedor-items-primarios {
+        width: 100%;
+    }
+
+    .audios {
+        width: 100%;
+        margin: 10px 0 10px 0px
+    }
+
+    .cuadro-con-imagenes {
+        padding: 10px 0px;
     }
 }
