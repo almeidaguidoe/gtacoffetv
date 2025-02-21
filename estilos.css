@@ -56,6 +56,7 @@ html {
 .aside {
     padding: 10px 10px 0px 10px;
     background: #ffe6f5;
+    width: 300px;
 
 
     background-image: url('./img/aside-nes-bottom.png');
@@ -197,7 +198,7 @@ html {
 
 .seccion-principal {
     height: 100%;
-
+    width: 100%;
 }
 
 .titulo-ppal {
@@ -316,6 +317,100 @@ html {
 
 /*---------------------- PÁGINA PERSONAJES ------------*/
 
+/*----------- INDICE PERSONAJES -------*/
+
+.personajes__indice {
+    background-color: #753375;
+    padding: 10px;
+
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+}
+
+.personajes-indice__titulo-ppal {
+    color: #fff;
+    font-size: calc(25px + 0.8vw);
+    padding: 10px;
+    border-bottom: 4px solid #07ad4c;
+    width: 100%;
+
+
+}
+
+.personajes-indice__contenedor-ppal {
+    
+    display: flex;
+    flex-flow: row wrap;
+
+    background-color:#ffe6f5;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.personajes-indice__enlaces {
+    color: #000;
+    text-decoration: none;
+    transition: .3s ease all;
+}
+
+.personajes-indice__enlaces:hover {
+    color: #07ad4c;
+}
+
+.personajes-indice__contenedor-items-primarios {
+
+    padding-left: 10px;
+    width: 25%;
+
+    border-left: 3px solid #5e0359;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.personajes-indice__item-primario {
+    list-style-type: none;
+    font-size: calc(16px + 0.6vw);
+    font-weight: 600;
+
+}
+
+.personajes-indice__contenedor-items-secundarios {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.personajes-indice__item-secundario {
+    list-style-type: none;
+    color: #000;
+    font-size: calc(14px + 0.4vw);
+    padding-left: 10px;
+}
+
+.personajes-indice__contenedor-items-terciarios {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.personajes-indice__item-terciario {
+    list-style-type: none;
+    color: #000;
+    font-size: calc(12px + 0.3vw);
+    padding-left: 15px;
+}
+
+.personajes-indice__contenedor-peatones {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+}
+
+/* #################################################*/
+
 .personajes__contenedor-ppal {
     display: flex;
     flex-direction: row;
@@ -374,104 +469,6 @@ html {
     align-items: center;
 }
 
-/*----------- INDICE PERSONAJES -------*/
-
-.personajes__indice {
-    background:#0c035e;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    transition: 1s linear all;
-}
-
-
-
-.personajes__lista-primaria {
-    width: 250px;
-    padding: 10px;
-}
-
-.personajes__lista-primaria a {
-    text-decoration: none;
-    color: #fff;
-    transition: .5s ease all;
-}
-
-.personajes__lista-primaria a:hover {
-    color:#136fbb;
-}
-
-.personajes__item-lista-primaria {
-    list-style-type: none;
-    font-weight: 600;
-    font-size: 18px;
-    padding: 5px 0px;
-    border-bottom: 3px solid #ee9c9c;
-}
-
-.personajes__lista-secundaria {
-    margin-left: 10px;
-    padding: 5px 0px;
-}
-
-.personajes__item-lista-secundaria {
-    list-style-type: none;
-    font-size: 16px;
-}
-
-.item-banda {
-    font-weight: 600;
-}
-
-.personajes__lista-terciaria {
-    margin-left: 10px;
-    padding: 5px 0px;
-}
-
-.personajes__item-lista-terciaria {
-    list-style-type: none;
-    font-weight: 14px;
-}
-
-
-
-/*-------------BOTON MOSTRAR INDICE PERSONAJES -------*/
-
-.boton-mostrar-indice-personajes {
-    background: #0c035e;
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    right: -100px;
-    top: 50px;
-    opacity: 0.8;
-    text-align:center;
-    vertical-align: middle;
-    transition: 0.5s linear all;
-    cursor: pointer;
-}
-
-
-
-.boton-mostrar-indice-personajes:hover {
-    opacity: 1;
-}
-
-.boton-mostrar-indice-personajes i {
-    color: #fff;
-    line-height: 80px;
-    font-size: 40px;
-}
-/*
-.aside__boton-cerrar-menu {
-    text-align: right;
-    font-size: 24px;
-    color:#5e0359;
-    align-self: flex-end;
-    display: none;
-    cursor: pointer;
-}
-*/
 
 /*##################### PÁGINA LUGARES #################*/
 
