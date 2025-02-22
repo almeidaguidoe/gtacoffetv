@@ -15,6 +15,7 @@
 
         <!--JAVASCRIPT-->
         <script src="./scripts.js" defer></script>
+        <script src="./reproductores-musica.js" defer></script>
 
         <title>GTA CoffeTV - Lugares</title>
 
@@ -435,10 +436,20 @@
                                 participaron <a class="links-generales" href="personajes.html#pj__pequeño-timmy">el Pequeño Timmy</a> y el propio
                                 <a class="links-generales" href="personajes.html#pj__michael-jackson">Michael Jackson</a>.
                             </p>
-                            <audio class="audios" controls>
-                                <source src="./audio/publicidades/publicidad-king-milapija.mp3" type="audio/mp3">
-                                <source src="./audio/publicidades/publicidad-king-milapija.ogg" type="audio/ogg">
-                            </audio>
+
+                            <div class="reproductor-musica-single">
+                                <h1>King Milapija</h1>
+                                <p>Publicidad Radial</p>
+                                <audio class="rep-musica__audio">
+                                    <source src="./audio/publis/publi-king-milapija.mp3" type="audio/mp3">
+                                </audio>
+                                <input type="range" value="0" class="rep-musica__barra-progreso" />
+                                <div class="rep-musica__controles">
+                                    <button class="rep-musica__boton-play-pause">
+                                        <i class="fa-solid fa-play rep-musica__icono-play-pause"></i>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                             
                         <div class="cuadro-con-imagenes">
