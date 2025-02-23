@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilos.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--GOOGLE FONTS-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+        <!--FONT AWESOME-->
+        <script src="https://kit.fontawesome.com/3b60c42785.js" crossorigin="anonymous"></script>
+
+        <!--JAVASCRIPT-->
+        <script src="./scripts.js" defer></script>
+        <script src="./reproductores-musica.js" defer></script>
+
+        <title>Radios | GTA CoffeTV</title>
+
+        <!--ICONO DE LA PÁGINA-->
+        <link rel="icon" type="image/x-icon" href="./img/icono-pagina.ico">
+    </head>
+    <body>
+        <!--********************* HEADER ************************-->
+        <header class="header">
+            <img src="./img/header-coffe-izq.png" class="header__imagen header__imagen-lados">
+            <a href="./index.html">
+                <img src="./img/header-logo-gta-coffetv.png" class="header__imagen">
+            </a>
+            <img src="./img/header-tana-der.png" class="header__imagen header__imagen-lados">
+            <h1 class="oculto">GTA CoffeTV</h1>
+        </header>
+
+        <main class="main">
+            <!--************************ ASIDE ************************-->
+            <aside class="aside" id="aside">
+                <!--************** BOTON CERRAR MENU LATERAL *******************-->
+                <div class="aside__boton-cerrar-menu" id="aside__boton-cerrar-menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <!--************************ NAVEGADOR ************************-->
+                <nav class="aside__contenedor navegador">
+                    <h3 class="aside__titulo" >Navegación</h3>
+                    <div class="navegador__contenedor-botones">
+                        <a href="./index.html" class="navegador__botones">Home</a>
+                        <a href="./personajes.html" class="navegador__botones">Personajes</a>
+                        <a href="./lugares.html" class="navegador__botones">Lugares</a>
+                        <a href="./radios.html" class="navegador__botones">Radios</a>
+                        <a href="./galeria.html" class="navegador__botones">Galería</a>
+                        <a href="./videos.html" class="navegador__botones">Videos</a>
+                    </div>
+                </nav>
+                <!--************************ REDES ************************-->
+                <div class="aside__contenedor redes">
+                    <h3 class="aside__titulo">Redes</h3>
+                    <div class="redes__contenedor">
+                        <a href="https://www.youtube.com/@Tateirotateiro" target="_blank" class="redes__link">
+                            <i class="fa-brands fa-youtube"></i>
+                            <h4 class="redes__titulos" >Canal Secundario de CoffeTV</h4>
+                        </a>
+                        <a href="https://www.youtube.com/coffetv" target="_blank" class="redes__link">
+                            <i class="fa-brands fa-youtube"></i>
+                            <h4 class="redes__titulos" >Canal Principal de CoffeTV</h4>
+                        </a>
+                        <a href="https://www.twitch.tv/coffetv_" target="_blank" class="redes__link">
+                            <i class="fa-brands fa-twitch"></i>
+                            <h4 class="redes__titulos" >Canal de Twitch de CoffeTV</h4>
+                        </a>
+                        <a href="https://www.instagram.com/coffetv__/" target="_blank" class="redes__link">
+                            <i class="fa-brands fa-instagram"></i>
+                            <h4 class="redes__titulos" >Instagram de CoffeTV</h4>
+                        </a>
+                        <a href="https://www.instagram.com/voglinn" target="_blank" class="redes__link">
+                            <i class="fa-brands fa-instagram"></i>
+                            <h4 class="redes__titulos" >Instagram de Voglinn</h4>
+                        </a>
+
+                    </div>
+                </div>
+
+            </aside>
+
+            <!--****** BOTÓN MOSTRAR EL ASIDE ******-->
+            <div class="boton-mostrar-menu-lateral" id="boton-mostrar-menu-lateral">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <!--******************************************************************************-->
+            <!--************************ SECCIÓN PRINCIPAL RADIO ***************************-->
+            <!--******************************************************************************-->
+            <div class="seccion-principal">
+                <h2 class="titulo-ppal">Radios</h2>
+
+                <!--************************ INDICE ***************************-->
+
+                <nav class="radios__indice">
+                    <h3 class="radios-indice__titulo-ppal">Índice</h3>
+                    <ul class="radios-indice__contenedor-ppal">
+
+                        <!-- indice - proximo diluvio -->
+                        <div class="radios-indice__contenedor-items-primarios">
+                            <li class="radios-indice__item-primario">
+                                <a href="#radio__proximo-diluvio" class="radios-indice__enlaces">Próximo Diluvio</a></li>
+                            <ul class="radios-indice__contenedor-items-secundarios">
+                                <li class="radios-indice__item-secundario">
+                                    <a href="#radios-prox-diluvio__identificadores" class="radios-indice__enlaces">Identificadores</a></li>
+                                <li class="radios-indice__item-secundario">
+                                    <a href="#radios-prox-diluvio__lineas-locutor" class="radios-indice__enlaces">Líneas del locutor</a></li>
+                                <li class="radios-indice__item-secundario">
+                                    <a href="#radios-prox-diluvio__canciones" class="radios-indice__enlaces">Canciones</a></li>
+                            </ul>
+                        </div>
+                        <!-- indice - coffebeats -->
+                        <div class="radios-indice__contenedor-items-primarios">
+                            <li class="radios-indice__item-primario">
+                                <a href="#radio__coffebeats" class="radios-indice__enlaces">CoffeBeats</a></li>
+                            <ul class="radios-indice__contenedor-items-secundarios">
+                                <li class="radios-indice__item-secundario">
+                                    <a href="#radios-coffebeats__identificadores" class="radios-indice__enlaces">Identificadores</a></li>
+                                <li class="radios-indice__item-secundario">
+                                    <a href="#radios-coffebeats__lineas-locutor" class="radios-indice__enlaces">Líneas del locutor</a></li>
+                                <li class="radios-indice__item-secundario">
+                                    <a href="#radios-coffebeats__canciones" class="radios-indice__enlaces">Canciones</a></li>
+                            </ul>
+                        </div>
+                        <!-- indice - trolopop -->
+                        <div class="radios-indice__contenedor-items-primarios">
+                            <li class="radios-indice__item-primario">
+                                <a href="#radio__trolopop" class="radios-indice__enlaces">TroloPop</a></li>
+                            <ul class="radios-indice__contenedor-items-secundarios">
+                                <li class="radios-indice__item-secundario">
+                                    <a href="#radios-trolopop__identificadores" class="radios-indice__enlaces">Identificadores</a></li>
+                                <li class="radios-indice__item-secundario">
+                                    <a href="#radios-trolopop__lineas-locutor" class="radios-indice__enlaces">Líneas del locutor</a></li>
+                                <li class="radios-indice__item-secundario">
+                                    <a href="#radios-trolopop__canciones" class="radios-indice__enlaces">Canciones</a></li>
+                            </ul>
+                        </div>
+                        <!-- indice - galactica -->
+                        <div class="radios-indice__contenedor-items-primarios">
+                            <li class="radios-indice__item-primario">
+                                <a href="#radio__galactica" class="radios-indice__enlaces">Galáctica</a></li>
+                            <ul class="radios-indice__contenedor-items-secundarios">
+                                <li class="radios-indice__item-secundario">
+                                    <a href="#radios-galactica__identificadores" class="radios-indice__enlaces">Identificadores</a></li>
+                                <li class="radios-indice__item-secundario">
+                                    <a href="#radios-galactica__lineas-locutor" class="radios-indice__enlaces">Líneas del locutor</a></li>
+                                <li class="radios-indice__item-secundario">
+                                    <a href="#radios-galactica__canciones" class="radios-indice__enlaces">Canciones</a></li>
+                            </ul>
+                        </div>
+                        <!-- indice - stroblin -->
+                        <div class="radios-indice__contenedor-items-primarios">
+                            <li class="radios-indice__item-primario">
+                                <a href="#radio__stroblin" class="radios-indice__enlaces">Stroblin</a></li>
+                            <ul class="radios-indice__contenedor-items-secundarios">
+                                <li class="radios-indice__item-secundario">
+                                    <a href="#radios-stroblin__lineas-locutor" class="radios-indice__enlaces">Líneas del locutor</a></li>
+                                <li class="radios-indice__item-secundario">
+                                    <a href="#radios-stroblin__canciones" class="radios-indice__enlaces">Canciones</a></li>
+                            </ul>
+                        </div>
+                        <!-- indice - tropinelson -->
+                        <div class="radios-indice__contenedor-items-primarios">
+                            <li class="radios-indice__item-primario">
+                                <a href="#radio__tropinelson" class="radios-indice__enlaces">TropiNelson</a></li>
+                            <ul class="radios-indice__contenedor-items-secundarios">
+                                <li class="radios-indice__item-secundario">
+                                    <a href="#radios-tropinelson__lineas-locutor" class="radios-indice__enlaces">Líneas del locutor</a></li>
+                                <li class="radios-indice__item-secundario">
+                                    <a href="#radios-tropinelson__canciones" class="radios-indice__enlaces">Canciones</a></li>
+                            </ul>
+                        </div>
+                        <!-- indice - tarantino -->
+                        <div class="radios-indice__contenedor-items-primarios">
+                            <li class="radios-indice__item-primario">
+                                <a href="#radio__tarantino" class="radios-indice__enlaces">Tarantino</a></li>
+                            <ul class="radios-indice__contenedor-items-secundarios">
+                                <li class="radios-indice__item-secundario">
+                                    <a href="#radios-tarantino__identificadores" class="radios-indice__enlaces">Identificadores</a></li>
+                                <li class="radios-indice__item-secundario">
+                                    <a href="#radios-tarantino__canciones" class="radios-indice__enlaces">Canciones</a></li>
+                            </ul>
+                        </div>
+                        <!-- indice - jabrumix -->
+                        <div class="radios-indice__contenedor-items-primarios">
+                            <li class="radios-indice__item-primario">
+                                <a href="#radio__jabrumix" class="radios-indice__enlaces">JabruMix</a></li>
+                            <ul class="radios-indice__contenedor-items-secundarios">
+                                <li class="radios-indice__item-secundario">
+                                    <a href="#radios-jabrumix__canciones" class="radios-indice__enlaces">Canciones</a></li>
+                            </ul>
+                        </div>
+                        <!-- indice - redondos de ricoffe -->
+                        <div class="radios-indice__contenedor-items-primarios">
+                            <li class="radios-indice__item-primario">
+                                <a href="#radio__redondos-ricoffe" class="radios-indice__enlaces">Redondos de RiCoffe</a></li>
+                            <ul class="radios-indice__contenedor-items-secundarios">
+                                <li class="radios-indice__item-secundario">
+                                    <a href="#radios-redondos-ricoffe__canciones" class="radios-indice__enlaces">Canciones</a></li>
+                            </ul>
+                        </div>
+                        <!-- indice - publicidades -->
+                        <div class="radios-indice__contenedor-items-primarios">
+                            <li class="radios-indice__item-primario">
+                                <a href="#radio__publicidades" class="radios-indice__enlaces">Publicidades</a></li>
+                        </div>
+                    </ul>
+                </nav>
+
+                <!--************************ RADIO PROXIMO DILUVIO ***************************-->
+                <section class="general__contenedor-articulos">
+                    <h3 class="personajes__categoria" id="radio__proximo-diluvio">Próximo Diluvio</h3>
+                    <!--***** INTRODUCCION *****-->
+                    <article class="articulos">
+                        <h3 class="titulos-articulos">Introducción</h3>
+                        <img src="./img/radios/logo-proximo-diluvio.png" class="fotos-articulos radios__logos" title="Logo de la radio Próximo Diluvio"
+                            alt="logo de la radio proximo diluvio, es el nombre de la radio en letras verdes encerradas en unos auriculares 
+                            de color rosa">
+                        <p class="parrafos-articulos">La radio Próximo Diluvio es una radio en la que se escuchan muchas de las canciones que 
+                            fueron exclusivamente compuestas para la comunidad de Coffe TV. El dueño y fundador de esta radio es <a class="links-generales"
+                             href="./personajes.html#pj__bloq-mayuss">Bloq Mayuss</a>. Inicialmente, Bloq creó esta radio con la intención de pasar 
+                             únicamente los temas que él mismo había compuesto para la comunidad, e instalar la idea de que él era el único músico de la comu 
+                             que había hecho temas para la misma, lo cual no era verdad ya que muchos otros artistas habían compuesto canciones para el stream. 
+                             Al enterarse de esto, <a class="links-generales" href="./personajes.html#pj__coffe-tv">Coffe TV</a> y <a class="links-generales" 
+                             href="./personajes.html#pj__rita-alejandra">Rita Alejandra</a> iniciaron una demanda contra él y su proyecto de radio, la cual aún 
+                             no había sido inaugurada. El caso se llevó a juicio, y la defensa de Bloq Mayuss fue tan lamentable que todo el jurado votó en su 
+                             contra de forma unánime. De esta forma, Bloq fue obligado legalmente a incluir a otros artistas en su radio que también habían 
+                             hecho canciones para la comunidad, aunque retuvo el derecho de que la mayoría de las canciones de la radio fueran de él.
+                        </p>
+                        <p class="parrafos-articulos">El nombre de la radio, "Próximo Diluvio", hace alusión a la frase que siempre dice Coffe TV al final de 
+                            sus videos: "El próximo diluvio nos volvemos a ver", la cual, a su vez, hace alusión a una canción de <a class="links-generales" 
+                            href="https://es.wikipedia.org/wiki/Patricio_Rey_y_sus_Redonditos_de_Ricota" target="_blank">Patricio Rey y sus Redonditos de Ricota</a>.
+                        </p>
+                        <p class="parrafos-articulos">El locutor de esta radio es el <a class="links-generales" href="./personajes.html#pj__el-pichi-ciego">Pichi Ciego</a> 
+                            que, en realidad, no siempre es el mismo Pichi Ciego, ya que este animal en particular suele morirse muy fácilmente en todo tipo de 
+                            circunstancias. Como podemos escuchar en la radio, de vez en cuando el locutor de la misma es reemplazado por otro Pichi Ciego, el cual 
+                            avisa a sus oyentes que el locutor anterior murió. La voz del Pichi Ciego la hace <a class="links-generales" href="https://doblaje.fandom.com/es/wiki/Carolina_Odena" 
+                            target="_blank">Caro Odena</a>, alias Vispita, una de las chicas de la comu que se prestó para ponerle voz a este personaje.
+                        </p>
+                        <p class="parrafos-articulos">Los artistas que hicieron las canciones que conforman el repertorio de esta radio son: <a class="links-generales" 
+                        href="./personajes.html#pj__bloq-mayuss">Bloq Mayuss</a>, <a class="links-generales" href="./personajes.html#pj__el-nes-junior">el Nes Junior</a>, 
+                        <a class="links-generales" href="./personajes.html#pj__edduerdo">Eddie Bandera</a>, 
+                        <a class="links-generales" href="./personajes.html#pj__scarlatta-singer">Scarlatta Singer</a>, <a class="links-generales" href="./personajes.html#pj__fiore-farisea">
+                            Fiore Farisea</a>, <a class="links-generales" href="./personajes.html#pj__rowletnom">Rowletnom</a>, Yamilitha Ochoa, <a class="links-generales" href="./personajes.html#pj__coffe-tv">Coffe TV</a> y <a class="links-generales" 
+                            href="./personajes.html#pj__voglinn">Voglinn</a>.
+                        </p>
+
+                        
+                    </article>
+
+                    <!--***** IDENTIFICADORES *****-->
+                    <article class="articulos radios__seccion-audios">
+                        <h3 class="titulos-articulos radios-seccion-audios__titulos" id="radios-prox-diluvio__identificadores">Identificadores</h3>
+                        <div class="reproductor-musica-single">
+                            <h1>Hacete una canción</h1>
+                            <p>ID de Próximo Diluvio</p>
+                            <audio class="rep-musica__audio">
+                                <source src="./audio/radios/proximo-diluvio/id-hacete-una-cancion.ogg" type="audio/ogg">
+                            </audio>
+                            <input type="range" value="0" class="rep-musica__barra-progreso" />
+                            <div class="rep-musica__controles">
+                                <button class="rep-musica__boton-play-pause">
+                                    <i class="fa-solid fa-play rep-musica__icono-play-pause"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="reproductor-musica-single">
+                            <h1>La radio de la funcionalidad</h1>
+                            <p>ID de Próximo Diluvio</p>
+                            <audio class="rep-musica__audio">
+                                <source src="./audio/radios/proximo-diluvio/id-la-radio-de-la-funcionalidad.ogg" type="audio/ogg">
+                            </audio>
+                            <input type="range" value="0" class="rep-musica__barra-progreso" />
+                            <div class="rep-musica__controles">
+                                <button class="rep-musica__boton-play-pause">
+                                    <i class="fa-solid fa-play rep-musica__icono-play-pause"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="reproductor-musica-single">
+                            <h1>Mandá tu audio</h1>
+                            <p>ID de Próximo Diluvio</p>
+                            <audio class="rep-musica__audio">
+                                <source src="./audio/radios/proximo-diluvio/id-manda-tu-audio.ogg" type="audio/ogg">
+                            </audio>
+                            <input type="range" value="0" class="rep-musica__barra-progreso" />
+                            <div class="rep-musica__controles">
+                                <button class="rep-musica__boton-play-pause">
+                                    <i class="fa-solid fa-play rep-musica__icono-play-pause"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="reproductor-musica-single">
+                            <h1>El 80% es Bloq Mayuss</h1>
+                            <p>ID de Próximo Diluvio</p>
+                            <audio class="rep-musica__audio">
+                                <source src="./audio/radios/proximo-diluvio/id-80-por-ciento-es-bloq-mayus.ogg" type="audio/ogg">
+                            </audio>
+                            <input type="range" value="0" class="rep-musica__barra-progreso" />
+                            <div class="rep-musica__controles">
+                                <button class="rep-musica__boton-play-pause">
+                                    <i class="fa-solid fa-play rep-musica__icono-play-pause"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                    </article>
+
+                    <!--***** LÍNEAS DEL LOCUTOR *****-->
+                    <article class="articulos radios__seccion-audios">
+                        <h3 class="titulos-articulos radios-seccion-audios__titulos" id="radios-prox-diluvio__lineas-locutor">Líneas del Locutor</h3>
+                        <div class="reproductor-musica-single">
+                            <h1>La mejor música de la comu</h1>
+                            <p>Locutor de Próximo Diluvio</p>
+                            <audio class="rep-musica__audio">
+                                <source src="./audio/radios/proximo-diluvio/linea-locutor-la-mejor-musica-de-la-comu.ogg" type="audio/ogg">
+                            </audio>
+                            <input type="range" value="0" class="rep-musica__barra-progreso" />
+                            <div class="rep-musica__controles">
+                                <button class="rep-musica__boton-play-pause">
+                                    <i class="fa-solid fa-play rep-musica__icono-play-pause"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="reproductor-musica-single">
+                            <h1>Te acompañamos a donde vayas</h1>
+                            <p>Locutor de Próximo Diluvio</p>
+                            <audio class="rep-musica__audio">
+                                <source src="./audio/radios/proximo-diluvio/linea-locutor-los-acompanamos-a-donde-vayan.ogg" type="audio/ogg">
+                            </audio>
+                            <input type="range" value="0" class="rep-musica__barra-progreso" />
+                            <div class="rep-musica__controles">
+                                <button class="rep-musica__boton-play-pause">
+                                    <i class="fa-solid fa-play rep-musica__icono-play-pause"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="reproductor-musica-single">
+                            <h1>Pichi anterior murió por abrazo</h1>
+                            <p>Locutor de Próximo Diluvio</p>
+                            <audio class="rep-musica__audio">
+                                <source src="./audio/radios/proximo-diluvio/linea-locutor-pichi-anterior-murio-abrazo.ogg" type="audio/ogg">
+                            </audio>
+                            <input type="range" value="0" class="rep-musica__barra-progreso" />
+                            <div class="rep-musica__controles">
+                                <button class="rep-musica__boton-play-pause">
+                                    <i class="fa-solid fa-play rep-musica__icono-play-pause"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="reproductor-musica-single">
+                            <h1>Pichi anterior murió por baldazo</h1>
+                            <p>Locutor de Próximo Diluvio</p>
+                            <audio class="rep-musica__audio">
+                                <source src="./audio/radios/proximo-diluvio/linea-locutor-pichi-anterior-murio-baldazo.ogg" type="audio/ogg">
+                            </audio>
+                            <input type="range" value="0" class="rep-musica__barra-progreso" />
+                            <div class="rep-musica__controles">
+                                <button class="rep-musica__boton-play-pause">
+                                    <i class="fa-solid fa-play rep-musica__icono-play-pause"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="reproductor-musica-single">
+                            <h1>Mañana</h1>
+                            <p>Locutor de Próximo Diluvio</p>
+                            <audio class="rep-musica__audio">
+                                <source src="./audio/radios/proximo-diluvio/linea-locutor-manana.ogg" type="audio/ogg">
+                            </audio>
+                            <input type="range" value="0" class="rep-musica__barra-progreso" />
+                            <div class="rep-musica__controles">
+                                <button class="rep-musica__boton-play-pause">
+                                    <i class="fa-solid fa-play rep-musica__icono-play-pause"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="reproductor-musica-single">
+                            <h1>Noche</h1>
+                            <p>Locutor de Próximo Diluvio</p>
+                            <audio class="rep-musica__audio">
+                                <source src="./audio/radios/proximo-diluvio/linea-locutor-noche.ogg" type="audio/ogg">
+                            </audio>
+                            <input type="range" value="0" class="rep-musica__barra-progreso" />
+                            <div class="rep-musica__controles">
+                                <button class="rep-musica__boton-play-pause">
+                                    <i class="fa-solid fa-play rep-musica__icono-play-pause"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="reproductor-musica-single">
+                            <h1>Madrugada</h1>
+                            <p>Locutor de Próximo Diluvio</p>
+                            <audio class="rep-musica__audio">
+                                <source src="./audio/radios/proximo-diluvio/linea-locutor-madrugada.ogg" type="audio/ogg">
+                            </audio>
+                            <input type="range" value="0" class="rep-musica__barra-progreso" />
+                            <div class="rep-musica__controles">
+                                <button class="rep-musica__boton-play-pause">
+                                    <i class="fa-solid fa-play rep-musica__icono-play-pause"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="reproductor-musica-single">
+                            <h1>Lluvia</h1>
+                            <p>Locutor de Próximo Diluvio</p>
+                            <audio class="rep-musica__audio">
+                                <source src="./audio/radios/proximo-diluvio/linea-locutor-lluvia.ogg" type="audio/ogg">
+                            </audio>
+                            <input type="range" value="0" class="rep-musica__barra-progreso" />
+                            <div class="rep-musica__controles">
+                                <button class="rep-musica__boton-play-pause">
+                                    <i class="fa-solid fa-play rep-musica__icono-play-pause"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="reproductor-musica-single">
+                            <h1>Niebla</h1>
+                            <p>Locutor de Próximo Diluvio</p>
+                            <audio class="rep-musica__audio">
+                                <source src="./audio/radios/proximo-diluvio/linea-locutor-niebla.ogg" type="audio/ogg">
+                            </audio>
+                            <input type="range" value="0" class="rep-musica__barra-progreso" />
+                            <div class="rep-musica__controles">
+                                <button class="rep-musica__boton-play-pause">
+                                    <i class="fa-solid fa-play rep-musica__icono-play-pause"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="reproductor-musica-single">
+                            <h1>Aviso de puentes 1</h1>
+                            <p>Locutor de Próximo Diluvio</p>
+                            <audio class="rep-musica__audio">
+                                <source src="./audio/radios/proximo-diluvio/linea-locutor-aviso-puente-1.ogg" type="audio/ogg">
+                            </audio>
+                            <input type="range" value="0" class="rep-musica__barra-progreso" />
+                            <div class="rep-musica__controles">
+                                <button class="rep-musica__boton-play-pause">
+                                    <i class="fa-solid fa-play rep-musica__icono-play-pause"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="reproductor-musica-single">
+                            <h1>Aviso de puentes 2</h1>
+                            <p>Locutor de Próximo Diluvio</p>
+                            <audio class="rep-musica__audio">
+                                <source src="./audio/radios/proximo-diluvio/linea-locutor-aviso-puente-2.ogg" type="audio/ogg">
+                            </audio>
+                            <input type="range" value="0" class="rep-musica__barra-progreso" />
+                            <div class="rep-musica__controles">
+                                <button class="rep-musica__boton-play-pause">
+                                    <i class="fa-solid fa-play rep-musica__icono-play-pause"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="reproductor-musica-single">
+                            <h1>Aviso de puentes 3</h1>
+                            <p>Locutor de Próximo Diluvio</p>
+                            <audio class="rep-musica__audio">
+                                <source src="./audio/radios/proximo-diluvio/linea-locutor-aviso-puente-3.ogg" type="audio/ogg">
+                            </audio>
+                            <input type="range" value="0" class="rep-musica__barra-progreso" />
+                            <div class="rep-musica__controles">
+                                <button class="rep-musica__boton-play-pause">
+                                    <i class="fa-solid fa-play rep-musica__icono-play-pause"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        
+                        
+                    </article>
+
+                    <!--***** CANCIONES *****-->
+                    <article class="articulos radios__seccion-audios">
+                        <h3 class="titulos-articulos radios-seccion-audios__titulos" id="radios-prox-diluvio__canciones">Canciones de la radio</h3>
+                        <div class="reproductor-musica-single">
+                            <h1>El trolo de tu corazón</h1>
+                            <p>Bloq Mayuss</p>
+                            <audio class="rep-musica__audio">
+                                <source src="./audio/radios/proximo-diluvio/canciones/cancion__bloq-mayuss-el-trolo-de-tu-corazon.mp3" type="audio/mp3">
+                            </audio>
+                            <input type="range" value="0" class="rep-musica__barra-progreso" />
+                            <div class="rep-musica__controles">
+                                <button class="rep-musica__boton-play-pause">
+                                    <i class="fa-solid fa-play rep-musica__icono-play-pause"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="reproductor-musica-single">
+                            <h1>Gonna, qué le parece Verona?</h1>
+                            <p>Bloq Mayuss</p>
+                            <audio class="rep-musica__audio">
+                                <source src="./audio/radios/proximo-diluvio/canciones/cancion__bloq-mayuss-gonna-que-le-parece-verona.mp3" type="audio/mp3">
+                            </audio>
+                            <input type="range" value="0" class="rep-musica__barra-progreso" />
+                            <div class="rep-musica__controles">
+                                <button class="rep-musica__boton-play-pause">
+                                    <i class="fa-solid fa-play rep-musica__icono-play-pause"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="reproductor-musica-single">
+                            <h1>GTA Coffe TV</h1>
+                            <p>Bloq Mayuss</p>
+                            <audio class="rep-musica__audio">
+                                <source src="./audio/radios/proximo-diluvio/canciones/cancion__bloq-mayuss-gta-coffe-tv.mp3" type="audio/mp3">
+                            </audio>
+                            <input type="range" value="0" class="rep-musica__barra-progreso" />
+                            <div class="rep-musica__controles">
+                                <button class="rep-musica__boton-play-pause">
+                                    <i class="fa-solid fa-play rep-musica__icono-play-pause"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="reproductor-musica-single">
+                            <h1>Matt Verona bless my soul</h1>
+                            <p>Bloq Mayuss</p>
+                            <audio class="rep-musica__audio">
+                                <source src="./audio/radios/proximo-diluvio/canciones/cancion__bloq-mayuss-matt-verona-bless-my-soul.mp3" type="audio/mp3">
+                            </audio>
+                            <input type="range" value="0" class="rep-musica__barra-progreso" />
+                            <div class="rep-musica__controles">
+                                <button class="rep-musica__boton-play-pause">
+                                    <i class="fa-solid fa-play rep-musica__icono-play-pause"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="reproductor-musica-single">
+                            <h1>Mister Kleis song</h1>
+                            <p>Bloq Mayuss</p>
+                            <audio class="rep-musica__audio">
+                                <source src="./audio/radios/proximo-diluvio/canciones/cancion__bloq-mayuss-mister-kleis-song.mp3" type="audio/mp3">
+                            </audio>
+                            <input type="range" value="0" class="rep-musica__barra-progreso" />
+                            <div class="rep-musica__controles">
+                                <button class="rep-musica__boton-play-pause">
+                                    <i class="fa-solid fa-play rep-musica__icono-play-pause"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="reproductor-musica-single">
+                            <h1>Para ser funcional</h1>
+                            <p>Bloq Mayuss</p>
+                            <audio class="rep-musica__audio">
+                                <source src="./audio/radios/proximo-diluvio/canciones/cancion__bloq-mayuss-para-ser-funcional.mp3" type="audio/mp3">
+                            </audio>
+                            <input type="range" value="0" class="rep-musica__barra-progreso" />
+                            <div class="rep-musica__controles">
+                                <button class="rep-musica__boton-play-pause">
+                                    <i class="fa-solid fa-play rep-musica__icono-play-pause"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="reproductor-musica-single">
+                            <h1>Pichi Song</h1>
+                            <p>Bloq Mayuss</p>
+                            <audio class="rep-musica__audio">
+                                <source src="./audio/radios/proximo-diluvio/canciones/cancion__bloq-mayuss-pichi-song.mp3" type="audio/mp3">
+                            </audio>
+                            <input type="range" value="0" class="rep-musica__barra-progreso" />
+                            <div class="rep-musica__controles">
+                                <button class="rep-musica__boton-play-pause">
+                                    <i class="fa-solid fa-play rep-musica__icono-play-pause"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="reproductor-musica-single">
+                            <h1>Coffe Song</h1>
+                            <p>Eddie Bandera</p>
+                            <audio class="rep-musica__audio">
+                                <source src="./audio/radios/proximo-diluvio/canciones/cancion__eddie-bandera-coffe-song.mp3" type="audio/mp3">
+                            </audio>
+                            <input type="range" value="0" class="rep-musica__barra-progreso" />
+                            <div class="rep-musica__controles">
+                                <button class="rep-musica__boton-play-pause">
+                                    <i class="fa-solid fa-play rep-musica__icono-play-pause"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="reproductor-musica-single">
+                            <h1>Tana Song</h1>
+                            <p>Eddie Bandera</p>
+                            <audio class="rep-musica__audio">
+                                <source src="./audio/radios/proximo-diluvio/canciones/cancion__eddie-bandera-tana-song.mp3" type="audio/mp3">
+                            </audio>
+                            <input type="range" value="0" class="rep-musica__barra-progreso" />
+                            <div class="rep-musica__controles">
+                                <button class="rep-musica__boton-play-pause">
+                                    <i class="fa-solid fa-play rep-musica__icono-play-pause"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="reproductor-musica-single">
+                            <h1>La comu está rara</h1>
+                            <p>Rowletnom</p>
+                            <audio class="rep-musica__audio">
+                                <source src="./audio/radios/proximo-diluvio/canciones/cancion__rowletnom-la-comu-esta-rara.mp3" type="audio/mp3">
+                            </audio>
+                            <input type="range" value="0" class="rep-musica__barra-progreso" />
+                            <div class="rep-musica__controles">
+                                <button class="rep-musica__boton-play-pause">
+                                    <i class="fa-solid fa-play rep-musica__icono-play-pause"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="reproductor-musica-single">
+                            <h1>La caida del jefe</h1>
+                            <p>Fiore Farisea</p>
+                            <audio class="rep-musica__audio">
+                                <source src="./audio/radios/proximo-diluvio/canciones/cancion__fiore-farisea-la-caida-del-jefe.mp3" type="audio/mp3">
+                            </audio>
+                            <input type="range" value="0" class="rep-musica__barra-progreso" />
+                            <div class="rep-musica__controles">
+                                <button class="rep-musica__boton-play-pause">
+                                    <i class="fa-solid fa-play rep-musica__icono-play-pause"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="reproductor-musica-single">
+                            <h1>Tateiro Evangelion</h1>
+                            <p>Scarlatta Singer</p>
+                            <audio class="rep-musica__audio">
+                                <source src="./audio/radios/proximo-diluvio/canciones/cancion__scarlata-singer-tateiro-evangelion.mp3" type="audio/mp3">
+                            </audio>
+                            <input type="range" value="0" class="rep-musica__barra-progreso" />
+                            <div class="rep-musica__controles">
+                                <button class="rep-musica__boton-play-pause">
+                                    <i class="fa-solid fa-play rep-musica__icono-play-pause"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="reproductor-musica-single">
+                            <h1>Los Justateiros</h1>
+                            <p>Scarlatta Singer</p>
+                            <audio class="rep-musica__audio">
+                                <source src="./audio/radios/proximo-diluvio/canciones/cancion__scarlatta-singer-los-justateiros.mp3" type="audio/mp3">
+                            </audio>
+                            <input type="range" value="0" class="rep-musica__barra-progreso" />
+                            <div class="rep-musica__controles">
+                                <button class="rep-musica__boton-play-pause">
+                                    <i class="fa-solid fa-play rep-musica__icono-play-pause"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="reproductor-musica-single">
+                            <h1>Donde está el Nes Junior?</h1>
+                            <p>El Nes Junior</p>
+                            <audio class="rep-musica__audio">
+                                <source src="./audio/radios/proximo-diluvio/canciones/cancion__donde-esta-el-nes-junior-el-nes-junior.mp3" type="audio/mp3">
+                            </audio>
+                            <input type="range" value="0" class="rep-musica__barra-progreso" />
+                            <div class="rep-musica__controles">
+                                <button class="rep-musica__boton-play-pause">
+                                    <i class="fa-solid fa-play rep-musica__icono-play-pause"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="reproductor-musica-single">
+                            <h1>Vamos los jefes</h1>
+                            <p>El Nes Junior</p>
+                            <audio class="rep-musica__audio">
+                                <source src="./audio/radios/proximo-diluvio/canciones/cancion__el-nes-junior-vamos-los-jefes.wav" type="audio/wav">
+                            </audio>
+                            <input type="range" value="0" class="rep-musica__barra-progreso" />
+                            <div class="rep-musica__controles">
+                                <button class="rep-musica__boton-play-pause">
+                                    <i class="fa-solid fa-play rep-musica__icono-play-pause"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="reproductor-musica-single">
+                            <h1>Donaciones puedes dar</h1>
+                            <p>Yamilitha Ochoa</p>
+                            <audio class="rep-musica__audio">
+                                <source src="./audio/radios/proximo-diluvio/canciones/cancion__yamilitha-ochoa-donaciones-puedes-dar.mp3" type="audio/mp3">
+                            </audio>
+                            <input type="range" value="0" class="rep-musica__barra-progreso" />
+                            <div class="rep-musica__controles">
+                                <button class="rep-musica__boton-play-pause">
+                                    <i class="fa-solid fa-play rep-musica__icono-play-pause"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="reproductor-musica-single">
+                            <h1>Let It Machin</h1>
+                            <p>Coffe TV</p>
+                            <audio class="rep-musica__audio">
+                                <source src="./audio/radios/proximo-diluvio/canciones/cancion__coffe-tv-let-it-machin.mp3" type="audio/mp3">
+                            </audio>
+                            <input type="range" value="0" class="rep-musica__barra-progreso" />
+                            <div class="rep-musica__controles">
+                                <button class="rep-musica__boton-play-pause">
+                                    <i class="fa-solid fa-play rep-musica__icono-play-pause"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="reproductor-musica-single">
+                            <h1>Luis Machin Voyage</h1>
+                            <p>Lady Vogaga</p>
+                            <audio class="rep-musica__audio">
+                                <source src="./audio/radios/proximo-diluvio/canciones/cancion__lady-vogaga-luis-machin-voyage.mp3" type="audio/mp3">
+                            </audio>
+                            <input type="range" value="0" class="rep-musica__barra-progreso" />
+                            <div class="rep-musica__controles">
+                                <button class="rep-musica__boton-play-pause">
+                                    <i class="fa-solid fa-play rep-musica__icono-play-pause"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        
+
+                        
+                        
+                    </article>
+                </section>
+
+            </div> <!--cierra sección principal-->
+
+        </main>
+        <!--*******************************************************-->
+        <!--********************** FOOTER *************************-->
+        <footer class="footer">
+            <div class="footer__grupo-logo">
+                <img class="footer__logo-voglinn-games" src="./img/footer-logo-voglinn-games.png" title="Voglinn Games">
+                <span class="footer__texto">Voglinn Games © 2024</span>
+            </div>
+            <div class="footer__grupo-info-1">
+                <span class="footer__texto">Editado por última vez el 16/02/2025</span>
+                <span class="footer__texto">Buenos Aires, Argentina</span>
+            </div>
+            <div class="footer__grupo-info-2">
+                <span class="footer__texto footer__link">Políticas de privacidad</span>
+                <span class="footer__texto footer__link">Contacto</span>
+            </div>
+        </footer>
+
+        <!--************************ BOTÓN DE SUBIR ARRIBA ***********************-->
+        <span class="boton-subir-arriba" title="Volver arriba" id="boton-subir-arriba">
+            <i class="fa-solid fa-circle-chevron-up"></i>
+        </span>
+    </body>
+</html>

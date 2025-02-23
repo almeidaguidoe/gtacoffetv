@@ -238,7 +238,6 @@ html {
     text-align: left;
     line-height: 30px;
     text-indent: 20px;
-
 }
 
 .fotos-articulos {
@@ -679,11 +678,106 @@ html {
     width: 100%;
 }
 
-/*---------------------- REPRODUCTORES DE MÚSICA ---------------*/
+/*################ PÁGINA RADIOS #################*/
+
+/*----------- INDICE RADIOS -------*/
+
+.radios__indice {
+    background-color: #753375;
+    padding: 10px;
+
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+}
+
+.radios-indice__titulo-ppal {
+    color: #fff;
+    font-size: calc(25px + 0.8vw);
+    padding: 10px;
+    border-bottom: 4px solid #07ad4c;
+    width: 100%;
+
+
+}
+
+.radios-indice__contenedor-ppal {
+    
+    display: flex;
+    flex-flow: row wrap;
+
+    background-color:#ffe6f5;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.radios-indice__enlaces {
+    color: #000;
+    text-decoration: none;
+    transition: .3s ease all;
+}
+
+.radios-indice__enlaces:hover {
+    color: #07ad4c;
+}
+
+.radios-indice__contenedor-items-primarios {
+
+    padding: 10px;
+    width: 20%;
+
+    border-left: 3px solid #5e0359;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.radios-indice__item-primario {
+    list-style-type: none;
+    font-size: calc(16px + 0.6vw);
+    font-weight: 600;
+
+}
+
+.radios-indice__contenedor-items-secundarios {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.radios-indice__item-secundario {
+    list-style-type: none;
+    color: #000;
+    font-size: calc(14px + 0.4vw);
+    padding-left: 10px;
+}
+
+/*----------- ARTÍCULOS RADIOS -------*/
+
+.radios__logos {
+    float: left;
+    margin: 0 10px 10px 5px;
+    max-width: 256px;
+}
+
+.radios__seccion-audios {
+    background: #1f0010;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.radios-seccion-audios__titulos {
+    color: #fff;
+    width: 100%;
+}
+
+/*################# REPRODUCTORES DE MÚSICA ################*/
 
 .reproductor-musica-single {
     position: relative;
-    max-width: 350px;
+    width: 300px;
     height: auto;
     border-radius: 15px;
     overflow: hidden;
@@ -733,6 +827,7 @@ html {
     font-size: 1.5rem;
     font-weight: 600;
     line-height: 1.6;
+    text-align: center;
 }
 
 .reproductor-musica-single p {
@@ -884,6 +979,10 @@ html {
     .novedades__titulo-principal {
         grid-column: span 2;
     }
+
+    .radios-indice__contenedor-items-primarios {
+        width: 33%;
+    }
 }
 
 @media only screen and (max-width:900px) {
@@ -1027,5 +1126,19 @@ html {
 
     .fotos-articulos {
         margin: 5px 0px;
+    }
+
+    .radios-indice__contenedor-items-primarios {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .radios-indice__contenedor-items-primarios {
+        width: 100%;
+    }
+
+    .aside {
+        width: 250px;
     }
 }

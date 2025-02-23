@@ -37,3 +37,34 @@ function subirArriba() {
 }
 
 botonSubirArriba.addEventListener('click', subirArriba);
+
+/* PREVENIR QUE HAYA DESPLAZAMIENTOS ANTES DE QUE CARGEN TODAS LAS IMÁGENES */
+/* esto es para los links internos */
+
+document.addEventListener("DOMContentLoaded", function () {
+    const enlaces = document.querySelectorAll('a[href^="#"], a[href*=".html#"]');
+
+    enlaces.forEach(enlace => {
+        enlace.addEventListener("click", function (event) {
+            const destino = this.getAttribute("href");
+
+            if (destino.includes(".html#")) {
+                // Guarda la sección en sessionStorage antes de cambiar de página
+                const [pagina, idSeccion] = destino.split("#");
+                sessionStorage.setItem("scrollTo", `#${idSeccion}`);
+            }
+        });
+    });
+
+    // Si hay una sección guardada, esperar a que la página cargue y hacer scroll
+    const scrollTo = sessionStorage.getItem("scrollTo");
+    if (scrollTo) {
+        sessionStorage.removeItem("scrollTo"); // Limpiar para futuras navegaciones
+        window.addEventListener("load", function () {
+            const destino = document.querySelector(scrollTo);
+            if (destino) {
+                destino.scrollIntoView({ behavior: "smooth" });
+            }
+        });
+    }
+});
