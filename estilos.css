@@ -242,23 +242,20 @@ html {
 
 .fotos-articulos {
     border-radius: 10px;
-    margin: 20px;
 }
 
-.foto-intro-1 {
+.foto-art-derecha {
     float: right;
-    width: 500px;
+    max-width: 400px;
+    margin: 0 0 10px 15px;
 }
 
-.foto-argumento-1 {
+.foto-art-izquierda {
     float: left;
-    width: 400px;
+    max-width: 500px;
+    margin: 0 15px 10px 0 ;
 }
 
-.foto-argumento-2 {
-    float: right;
-    width: 400px;
-}
 
 /*---------------- ARTICULO NOVEDADES --------*/
 
@@ -440,12 +437,13 @@ html {
 
 .personaje__titulo {
     font-size: calc(18px + 1vw);
-    padding: 10px 0px;
+    margin-bottom: 10px;
 }
 
 .foto-pj {
     float: left;
-    max-width: 250px;
+    max-width: 350px;
+    margin: 0 15px 10px 0;
 }
 
 
@@ -757,7 +755,7 @@ html {
 .radios__logos {
     float: left;
     margin: 0 10px 10px 5px;
-    max-width: 256px;
+    max-width: 128px;
 }
 
 .radios__seccion-audios {
@@ -806,7 +804,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    filter: blur(3px);
+    filter: blur(2px);
     z-index: 0;
 }
 
@@ -822,7 +820,7 @@ html {
     border-radius: 15px;
 }
 
-.reproductor-musica-single h1 {
+.reproductor-musica-single h4 {
     color: #fff;
     font-size: 1.5rem;
     font-weight: 600;
@@ -1087,6 +1085,7 @@ html {
 
     .locales-de-ropa__seccion-ropa-a-la-venta {
         padding: 0px;
+        padding-top: 10px;
     }
 
     .ropa-a-la-venta__imagen {
