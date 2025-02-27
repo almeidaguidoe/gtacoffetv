@@ -832,6 +832,7 @@ html {
     color: #fff;
     font-size: 1rem;
     font-weight: 400;
+    text-align: center;
 }
 
 .reproductor-musica-single input {
