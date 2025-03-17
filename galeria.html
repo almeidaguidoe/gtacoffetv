@@ -15,8 +15,9 @@
 
         <!--JAVASCRIPT-->
         <script src="./scripts.js" defer></script>
+        <script src="./visualizador-lightbox.js" defer></script>
 
-        <title>GTA CoffeTV - Home</title>
+        <title>Galería | GTA CoffeTV</title>
 
         <!--ICONO DE LA PÁGINA-->
         <link rel="icon" type="image/x-icon" href="./img/icono-pagina.ico">
@@ -46,7 +47,7 @@
                         <a href="./index.html" class="navegador__botones">Home</a>
                         <a href="./personajes.html" class="navegador__botones">Personajes</a>
                         <a href="./lugares.html" class="navegador__botones">Lugares</a>
-                        <a href="./radio.html" class="navegador__botones">Radio</a>
+                        <a href="./radios.html" class="navegador__botones">Radios</a>
                         <a href="./galeria.html" class="navegador__botones">Galería</a>
                         <a href="./videos.html" class="navegador__botones">Videos</a>
                     </div>
@@ -55,7 +56,7 @@
                 <div class="aside__contenedor redes">
                     <h3 class="aside__titulo">Redes</h3>
                     <div class="redes__contenedor">
-                        <a href="https://www.youtube.com/@IvanDeLaNave" target="_blank" class="redes__link">
+                        <a href="https://www.youtube.com/@Tateirotateiro" target="_blank" class="redes__link">
                             <i class="fa-brands fa-youtube"></i>
                             <h4 class="redes__titulos" >Canal Secundario de CoffeTV</h4>
                         </a>
@@ -79,36 +80,195 @@
                     </div>
                 </div>
 
-            </aside>
+            </aside> <!--cierra aside-->
 
             <div class="boton-mostrar-menu-lateral" id="boton-mostrar-menu-lateral">
                 <i class="fa-solid fa-bars"></i>
             </div>
 
-            <div class="contenedor-articulos">
+            <!--******************************************************************************-->
+            <!--************************ SECCIÓN PRINCIPAL GALERÍA ***************************-->
+            <!--******************************************************************************-->
+            
+            <div class="seccion-principal">
+                <h2 class="titulo-ppal">Galería de Imágenes</h2>
 
-            </div>
 
-            <!--********************** FOOTER *************************-->
-            <footer class="footer">
-                <div class="footer__grupo-logo">
-                    <img class="footer__logo-voglinn-games" src="./img/footer-logo-voglinn-games.png" title="Voglinn Games">
-                    <span class="footer__texto">Voglinn Games © 2024</span>
-                </div>
-                <div class="footer__grupo-info-1">
-                    <span class="footer__texto">Editado por última vez el 13/07/2024</span>
-                    <span class="footer__texto">Buenos Aires, Argentina</span>
-                </div>
-                <div class="footer__grupo-info-2">
-                    <span class="footer__texto footer__link">Políticas de privacidad</span>
-                    <span class="footer__texto footer__link">Contacto</span>
-                </div>
-            </footer>
+                <!--************************ INDICE ***************************-->
 
-            <!--************************ BOTÓN DE SUBIR ARRIBA ***********************-->
-            <span class="boton-subir-arriba" title="Volver arriba" id="boton-subir-arriba">
-                <i class="fa-solid fa-circle-chevron-up"></i>
-            </span>
+                <nav class="lugares__indice">
+                    <h3 class="lugares-indice__titulo-ppal">Índice</h3>
+                    <ul class="lugares-indice__contenedor-ppal">
+
+                        <!-- indice - mapas -->
+                        <!--
+                        <div class="lugares-indice__contenedor-items-primarios">
+                            <li class="lugares-indice__item-primario">
+                                <a href="#lugares__ciudades" class="lugares-indice__enlaces">San Fariseas y Coffe Town</a></li>
+                            <ul class="lugares-indice__contenedor-items-secundarios">
+                                <li class="lugares-indice__item-secundario">
+                                    <a href="#lugares__san-fariseas" class="lugares-indice__enlaces">San Fariseas</a></li>
+                                <li class="lugares-indice__item-secundario">
+                                    <a href="#lugares__coffe-town" class="lugares-indice__enlaces">Coffe Town</a></li>
+                            </ul>
+                        </div>
+                        -->
+                        <!-- indice - locales de comida -->
+                        <!--
+                        <div class="lugares-indice__contenedor-items-primarios">
+                            <li class="lugares-indice__item-primario">
+                                <a class="lugares-indice__enlaces" href="#lugares__locales-de-comida">Locales de Comida</a></li>
+                            <ul class="lugares-indice__contenedor-items-secundarios">
+                                <li class="lugares-indice__item-secundario">
+                                    <a class="lugares-indice__enlaces" href="#lugares__pizzeria-corazon-de-pizza">Pizzería Corazón de Pizza</a></li>
+                                <li class="lugares-indice__item-secundario">
+                                    <a class="lugares-indice__enlaces" href="#lugares__mcpounes">McPouNes</a></li>
+                                <li class="lugares-indice__item-secundario">
+                                    <a class="lugares-indice__enlaces" href="#lugares__king-milapija">King Milapija</a></li>
+                                <li class="lugares-indice__item-secundario">
+                                    <a class="lugares-indice__enlaces" href="#lugares__corki-torts">Corki Torts</a></li>
+                            </ul>
+                        </div>
+                        -->
+                        
+                        <!-- indice - locales de ropa -->
+
+                        <!--
+                        <div class="lugares-indice__contenedor-items-primarios">
+                            <li class="lugares-indice__item-primario">
+                                <a class="lugares-indice__enlaces" href="#lugares__locales-de-ropa">Locales de Ropa</a></li>
+                            <ul class="lugares-indice__contenedor-items-secundarios">
+                                <li class="lugares-indice__item-secundario">
+                                    <a class="lugares-indice__enlaces" href="#lugares__kosiukaio">Kosiukaio</a></li>
+                                <li class="lugares-indice__item-secundario">
+                                    <a class="lugares-indice__enlaces" href="#lugares__freddie-not-dead">Freddie Not Dead</a></li>
+                                <li class="lugares-indice__item-secundario">
+                                    <a class="lugares-indice__enlaces" href="#lugares__galga-rop">Galga Rop</a></li>
+                                <li class="lugares-indice__item-secundario">
+                                    <a class="lugares-indice__enlaces" href="#lugares__desiderita">DesideRita</a></li>
+                                <li class="lugares-indice__item-secundario">
+                                    <a class="lugares-indice__enlaces" href="#lugares__monike">MoNike</a></li>
+                                <li class="lugares-indice__item-secundario">
+                                    <a class="lugares-indice__enlaces" href="#lugares__zonia">Zonia</a></li>
+                                <li class="lugares-indice__item-secundario">
+                                    <a class="lugares-indice__enlaces" href="#lugares__ropa-otros">Otros locales de ropa</a></li>
+                            </ul>
+                        </div>
+                        -->
+                        
+                        <!-- indice - lugares varios -->
+
+                        <!--
+                        <div class="lugares-indice__contenedor-items-primarios">
+                            <li class="lugares-indice__item-primario">
+                                <a class="lugares-indice__enlaces" href="#lugares__lugares-varios">Lugares Varios</a></li>
+                            <ul class="lugares-indice__contenedor-items-secundarios">
+                                <li class="lugares-indice__item-secundario">
+                                    <a class="lugares-indice__enlaces" href="#lugares__casa-de-coffe">Casa de Coffe</a></li>
+                                <li class="lugares-indice__item-secundario">
+                                    <a class="lugares-indice__enlaces" href="#lugares__peluquerias">Peluquerías</a></li>
+                                <li class="lugares-indice__item-secundario">
+                                    <a class="lugares-indice__enlaces" href="#lugares__estudios-de-tatuajes">Estudios de tatuajes</a></li>
+                                <li class="lugares-indice__item-secundario">
+                                    <a class="lugares-indice__enlaces" href="#lugares__roscomercado">RoscoMercado</a></li>
+                                <li class="lugares-indice__item-secundario">
+                                    <a class="lugares-indice__enlaces" href="#lugares__la-malla-de-ale">La Malla de Ale</a></li>
+                                <li class="lugares-indice__item-secundario">
+                                    <a class="lugares-indice__enlaces" href="#lugares__el-cibercafe">El Cibercafé</a></li>
+                                <li class="lugares-indice__item-secundario">
+                                    <a class="lugares-indice__enlaces" href="#lugares__la-cueva-del-satiro">La Cueva del Sátiro</a></li>
+                                <li class="lugares-indice__item-secundario">
+                                    <a class="lugares-indice__enlaces" href="#lugares__el-gimnasio">El Gimnasio</a></li>
+                                <li class="lugares-indice__item-secundario">
+                                    <a class="lugares-indice__enlaces" href="#lugares__otros">Otros</a></li>
+                            </ul>
+                        </div>
+                        -->
+                    </ul>
+                </nav>
+
+                <!--************************ SECCION LUGARES ***************************-->
+                <section class="general__contenedor-articulos">
+                    <h3 class="personajes__categoria" id="galeria__lugares">Lugares</h3>
+                    <!-- ARTÍCULO LOCALES DE COMIDA-->
+                    <article class="articulos">
+                        <h3 class="titulos-articulos" id="galeria__locales-de-comida">Locales de Comida</h3>
+                        <div class="galeria__contenedor-imagenes">
+                            <img src="./img/galeria/lugares/locales-de-comida/corazon-de-pizza_1.png" alt="La Pizzería Corazón de Pizza" class="galeria__imagen glr__loc-comid_1">
+                            <img src="./img/galeria/lugares/locales-de-comida/corazon-de-pizza_2.png" alt="El cartel en la entrada de la Pizzería Corazón de Pizza" class="galeria__imagen glr__loc-comid_2">
+                            <img src="./img/galeria/lugares/locales-de-comida/corazon-de-pizza_3.png" alt="El interior de la Pizzería Corazón de Pizza" class="galeria__imagen glr__loc-comid_3">
+                            <img src="./img/galeria/lugares/locales-de-comida/corazon-de-pizza_4.png" alt="El combo 'Uuuh... Amarilla' de la Pizzería Corazón de Pizza" class="galeria__imagen glr__loc-comid_4">
+                            <img src="./img/galeria/lugares/locales-de-comida/corazon-de-pizza_5.png" alt="El combo 'Cuidado con el cura' de la Pizzería Corazón de Pizza" class="galeria__imagen glr__loc-comid_5">
+                            <img src="./img/galeria/lugares/locales-de-comida/corazon-de-pizza_6.png" alt="Los tres combos de la Pizzería Corazón de Pizza" class="galeria__imagen glr__loc-comid_6">
+                            <img src="./img/galeria/lugares/locales-de-comida/corazon-de-pizza_7.png" alt="Los empleados de la Pizzería Corazón de Pizza" class="galeria__imagen glr__loc-comid_7">
+                            <img src="./img/galeria/lugares/locales-de-comida/corazon-de-pizza_8.png" alt="Las pizzas de la Pizzería Corazón de Pizza" class="galeria__imagen glr__loc-comid_8">
+                            <img src="./img/galeria/lugares/locales-de-comida/king-milapija_1.png" alt="El local de King Milapija" class="galeria__imagen glr__loc-comid_9">
+                            <img src="./img/galeria/lugares/locales-de-comida/king-milapija_2.png" alt="El cartel con el logo de King Milapija" class="galeria__imagen glr__loc-comid_10">
+                            <img src="./img/galeria/lugares/locales-de-comida/king-milapija_3.png" alt="El interior del King Milapija" class="galeria__imagen glr__loc-comid_11">
+                            <img src="./img/galeria/lugares/locales-de-comida/king-milapija_4.png" alt="La cocina y caja del King Milapija" class="galeria__imagen glr__loc-comid_12">
+                            <img src="./img/galeria/lugares/locales-de-comida/king-milapija_5.png" alt="Los empleados del King Milapija" class="galeria__imagen glr__loc-comid_13">
+                            <img src="./img/galeria/lugares/locales-de-comida/king-milapija_6.png" alt="Cartel del Sanguche de Pijanesa de King Milapija" class="galeria__imagen glr__loc-comid_14">
+                            <img src="./img/galeria/lugares/locales-de-comida/king-milapija_7.png" alt="Cartel de la Milaverga con Pajas Fritas de King Milapija" class="galeria__imagen glr__loc-comid_15">
+                            <img src="./img/galeria/lugares/locales-de-comida/king-milapija_8.png" alt="Cartel de los Bastones de Chota Rebozada de King Milapija" class="galeria__imagen glr__loc-comid_16">
+                            <img src="./img/galeria/lugares/locales-de-comida/king-milapija_9.png" alt="Chambuchito de Miga comiendo en el King Milapija" class="galeria__imagen glr__loc-comid_17">
+                            <img src="./img/galeria/lugares/locales-de-comida/king-milapija_10.png" alt="Tachos de basura del King Milapija" class="galeria__imagen glr__loc-comid_18">
+                            <img src="./img/galeria/lugares/locales-de-comida/king-milapija_11.png" alt="Una mesa y una bandeja del King Milapija" class="galeria__imagen glr__loc-comid_19">
+                            <img src="./img/galeria/lugares/locales-de-comida/king-milapija_12.png" alt="Sanguche de Pijanesa del King Milapija" class="galeria__imagen glr__loc-comid_20">
+                            <img src="./img/galeria/lugares/locales-de-comida/mcpounes_1.png" alt="El local del McPouNes en el barrio Black Paul" class="galeria__imagen glr__loc-comid_21">
+                            <img src="./img/galeria/lugares/locales-de-comida/mcpounes_2.png" alt="Los combos del McPouNes" class="galeria__imagen glr__loc-comid_22">
+                            <img src="./img/galeria/lugares/locales-de-comida/mcpounes_3.png" alt="El logo y la hamburguesa gigante del McPouNes" class="galeria__imagen glr__loc-comid_23">
+                            <img src="./img/galeria/lugares/locales-de-comida/mcpounes_4.png" alt="Cartel del Doble Cuarto de Papada en el McPouNes" class="galeria__imagen glr__loc-comid_24">
+                            <img src="./img/galeria/lugares/locales-de-comida/mcpounes_5.png" alt="Tacho de basura y menú en el McPouNes" class="galeria__imagen glr__loc-comid_25">
+                            <img src="./img/galeria/lugares/locales-de-comida/mcpounes_6.png" alt="El Menú del McPouNes" class="galeria__imagen glr__loc-comid_26">
+                            <img src="./img/galeria/lugares/locales-de-comida/mcpounes_7.png" alt="Los menúes arriba de las cajas" class="galeria__imagen glr__loc-comid_27">
+                            <img src="./img/galeria/lugares/locales-de-comida/mcpounes_8.png" alt="Las empleadas del McPouNes" class="galeria__imagen glr__loc-comid_28">
+                            <img src="./img/galeria/lugares/locales-de-comida/mcpounes_9.png" alt="El gorro del uniforme por detrás del McPouNes" class="galeria__imagen glr__loc-comid_29">
+                            <img src="./img/galeria/lugares/locales-de-comida/mcpounes_10.png" alt="Los vasos del McPouNes" class="galeria__imagen glr__loc-comid_30">
+                            <img src="./img/galeria/lugares/locales-de-comida/mcpounes_11.png" alt="El local del McPouNes en el barrio Bebito Fiu Fiu" class="galeria__imagen glr__loc-comid_31">
+                            <img src="./img/galeria/lugares/locales-de-comida/mcpounes_12.png" alt="Cartel del Pou Tití Fernandez en un McPouNes" class="galeria__imagen glr__loc-comid_32">
+                            <img src="./img/galeria/lugares/locales-de-comida/corki-torts_1.png" alt="Local del Corki Torts en el barrio Pionono de Vitrina" class="galeria__imagen glr__loc-comid_33">
+                            <img src="./img/galeria/lugares/locales-de-comida/corki-torts_2.png" alt="Local del Corki Torts en el barrio Black Paul" class="galeria__imagen glr__loc-comid_34">
+                            <img src="./img/galeria/lugares/locales-de-comida/corki-torts_3.png" alt="Local del Corki Torts en el barrio Bebito Fiu Fiu" class="galeria__imagen glr__loc-comid_35">
+                            <img src="./img/galeria/lugares/locales-de-comida/corki-torts_4.png" alt="Vista de costado de uno de los locales de Corki Torts" class="galeria__imagen glr__loc-comid_36">
+                            <img src="./img/galeria/lugares/locales-de-comida/corki-torts_5.png" alt="El interior del local de Corki Torts" class="galeria__imagen glr__loc-comid_37">
+                            <img src="./img/galeria/lugares/locales-de-comida/corki-torts_6.png" alt="Promo y cartel dentro del Corki Torts" class="galeria__imagen glr__loc-comid_38">
+                            <img src="./img/galeria/lugares/locales-de-comida/corki-torts_7.png" alt="Promoción de las nuecas torts hechas con aceite del Bibel en el Corki Torts" class="galeria__imagen glr__loc-comid_39">
+                            <img src="./img/galeria/lugares/locales-de-comida/corki-torts_8.png" alt="Máquina de cepichi bajo unos carteles en el Corki Torts" class="galeria__imagen glr__loc-comid_40">
+
+                            <div class="galeria__container-img">
+                                <img src="" alt="" class="galeria__img-show">
+                                <i class="fa-solid fa-xmark"></i>
+                                <p class="galeria__copy"></p>
+                            </div>
+                        </div>
+
+
+                    </article>
+                </section> <!--cierra sección lugares-->
+            </div> <!--cierra sección principal-->
+
+
         </main>
+        <!--*******************************************************-->
+        <!--********************** FOOTER *************************-->
+        <footer class="footer">
+            <div class="footer__grupo-logo">
+                <img class="footer__logo-voglinn-games" src="./img/footer-logo-voglinn-games.png" title="Voglinn Games">
+                <span class="footer__texto">Voglinn Games © 2024</span>
+            </div>
+            <div class="footer__grupo-info-1">
+                <span class="footer__texto">Editado por última vez el 16/02/2025</span>
+                <span class="footer__texto">Buenos Aires, Argentina</span>
+            </div>
+            <div class="footer__grupo-info-2">
+                <span class="footer__texto footer__link">Políticas de privacidad</span>
+                <span class="footer__texto footer__link">Contacto</span>
+            </div>
+        </footer>
+
+        <!--************************ BOTÓN DE SUBIR ARRIBA ***********************-->
+        <span class="boton-subir-arriba" title="Volver arriba" id="boton-subir-arriba">
+            <i class="fa-solid fa-circle-chevron-up"></i>
+        </span>
     </body>
 </html>
