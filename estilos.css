@@ -800,6 +800,7 @@ html {
     transition: border .5s;
 }
 
+/*########### VISUALIZADOR LIGHTBOX ###########*/
 
 .galeria__container-img {
     position: fixed;
@@ -840,7 +841,7 @@ html {
     bottom: 30px;
 }
 
-.fa-solid.fa-xmark {
+.vis-img__icono-cerrar {
     position: absolute;
     color: #ffe6f5;
     top: 20px;
