@@ -1,15 +1,15 @@
 /* ------- REPRODUCTOR DE MUSICA SINGLE ----------- */
 
-document.querySelectorAll('.reproductor-musica-single').forEach(reproductor => {
-    const audio = reproductor.querySelector('.rep-musica__audio');
-    const botonPlayPause = reproductor.querySelector('.rep-musica__boton-play-pause');
-    const iconoPlayPause = reproductor.querySelector('.rep-musica__icono-play-pause');
-    const barraProgreso = reproductor.querySelector('.rep-musica__barra-progreso');
+document.querySelectorAll('.reproductor-musica-single').forEach(repr => {
+    const audio = repr.querySelector('.rep-musica__audio');
+    const botonPlayPause = repr.querySelector('.rep-musica__boton-play-pause');
+    const iconoPlayPause = repr.querySelector('.rep-musica__icono-play-pause');
+    const barraProgreso = repr.querySelector('.rep-musica__barra-progreso');
 
     //Función para pausar audio y cambiar icono de play/pause cuando se reproduce otro audio
     function resetearOtrosReproductores() {
         document.querySelectorAll('.reproductor-musica-single').forEach(otroRep => {
-            if (otroRep !== reproductor) {
+            if (otroRep !== repr) {
                 const otroAudio = otroRep.querySelector('.rep-musica__audio');
                 const otroIconoPlayPause = otroRep.querySelector('.rep-musica__icono-play-pause');
 
@@ -51,4 +51,4 @@ document.querySelectorAll('.reproductor-musica-single').forEach(reproductor => {
         barraProgreso.value = 0;
     });
 
-});
+}); //cierra el forEach
