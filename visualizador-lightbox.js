@@ -11,9 +11,12 @@ galeriaImagenes.forEach(img => {
 })
 
 const galeriaAgregarImg = (srcImg, altImg)=>{
+
+    const srcImgAlta = srcImg.replace('_mini', '');
+
     galeriaContainerImg.classList.toggle('galeria__img-move');
     galeriaImgShow.classList.toggle('galeria__mostrar-img');
-    galeriaImgShow.src = srcImg;
+    galeriaImgShow.src = srcImgAlta;
     galeriaImgCopy.innerHTML = altImg;
 }
 
