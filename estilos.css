@@ -451,6 +451,7 @@ html {
 .foto-banda {
     float: left;
     max-width: 350px;
+    margin-right: 15px;
 }
 
 .personajes__contenedor-articulos-pequeños {
@@ -848,6 +849,19 @@ html {
 
 /*----------- ARTÍCULOS GALERÍA DE IMÁGENES -------*/
 
+.galeria__articulos {
+    background: #02213a;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.galeria__titulos-articulos {
+    font-size: calc(18px + 1vw);
+    margin: 10px;
+    width: 100%;
+    color: #fff;
+}
+
 .galeria__contenedor-imagenes {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -861,6 +875,7 @@ html {
 .galeria__imagen {
     max-width: 100%;
     vertical-align: top;
+    justify-self: center;
     height: 300px;
     object-fit: cover;
     overflow: hidden;
@@ -872,6 +887,32 @@ html {
     border: 5px solid #07ad4c;
     cursor: pointer;
     transition: border .5s;
+}
+
+/*----------- ENLACES HACIA LA GALERÍA -------*/
+
+.galeria__enlaces-hacia {
+    width: 100%;
+    padding: 20px;
+    background: #02213a;
+    /*
+    background: linear-gradient(to right, #02213a, #620d9b);
+    */
+    color: #fff;
+    font-weight:600;
+    border-radius: 50px;
+    line-height: 25px;
+    vertical-align: middle;
+    transition: ease all .5s;
+}
+
+.galeria__enlaces-hacia i {
+    margin: 0px 10px;
+    font-size: 25px;
+}
+
+.galeria__enlaces-hacia:hover {
+    color: #07ad4c;
 }
 
 /*########### VISUALIZADOR LIGHTBOX ###########*/
@@ -1196,6 +1237,14 @@ html {
         padding-left: 10px;
     }
 
+    .galeria-indice__contenedor-ppal {
+        flex-flow: row wrap;
+    }
+
+    .galeria-indice__contenedor-items-primarios {
+        width: 50%;
+    }
+
 
 
 }
@@ -1258,6 +1307,14 @@ html {
         width: 100%;
     }
 
+    .galeria-indice__contenedor-ppal {
+        flex-flow: column nowrap;
+    }
+
+    .galeria-indice__contenedor-items-primarios {
+        width: 100%;
+    }
+
     .audios {
         width: 100%;
         margin: 10px 0 10px 0px
@@ -1273,6 +1330,7 @@ html {
 
     .foto-banda {
         width: 100%;
+        margin-right: 0;
     }
 
     .foto-pj {
@@ -1286,6 +1344,10 @@ html {
 
     .radios-indice__contenedor-items-primarios {
         width: 50%;
+    }
+
+    .galeria__enlaces-hacia {
+        text-align: center;
     }
 }
 
