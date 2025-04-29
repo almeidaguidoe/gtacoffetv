@@ -15,8 +15,9 @@
 
         <!--JAVASCRIPT-->
         <script src="./scripts.js" defer></script>
+        <script src="./reproductor-video.js" defer></script>
 
-        <title>GTA CoffeTV - Home</title>
+        <title>Galería | GTA CoffeTV</title>
 
         <!--ICONO DE LA PÁGINA-->
         <link rel="icon" type="image/x-icon" href="./img/icono-pagina.ico">
@@ -46,7 +47,7 @@
                         <a href="./index.html" class="navegador__botones">Home</a>
                         <a href="./personajes.html" class="navegador__botones">Personajes</a>
                         <a href="./lugares.html" class="navegador__botones">Lugares</a>
-                        <a href="./radio.html" class="navegador__botones">Radio</a>
+                        <a href="./radios.html" class="navegador__botones">Radios</a>
                         <a href="./galeria.html" class="navegador__botones">Galería</a>
                         <a href="./videos.html" class="navegador__botones">Videos</a>
                     </div>
@@ -55,7 +56,7 @@
                 <div class="aside__contenedor redes">
                     <h3 class="aside__titulo">Redes</h3>
                     <div class="redes__contenedor">
-                        <a href="https://www.youtube.com/@IvanDeLaNave" target="_blank" class="redes__link">
+                        <a href="https://www.youtube.com/@Tateirotateiro" target="_blank" class="redes__link">
                             <i class="fa-brands fa-youtube"></i>
                             <h4 class="redes__titulos" >Canal Secundario de CoffeTV</h4>
                         </a>
@@ -85,30 +86,501 @@
                 <i class="fa-solid fa-bars"></i>
             </div>
 
-            <div class="contenedor-articulos">
+            <!--******************************************************************************-->
+            <!--************************ SECCIÓN PRINCIPAL VIDEOS ***************************-->
+            <!--******************************************************************************-->
 
+            <div class="seccion-principal">
+                <h2 class="titulo-ppal">Videos</h2>
+
+                <!--************************ ARTÍCULO DEL TRAILER DEL JUEGO ***************************-->
+                <section class="general__contenedor-articulos">
+                    <h3 class="personajes__categoria" id="videos__trailer">Trailer del juego</h3>
+                    <!--***** DESCRIPCION *****-->
+                    <article class="articulos">
+                        <p class="parrafos-articulos">
+                            Este es el trailer que se hizo para promocionar el juego antes de su lanzamiento. La edición la hice 
+                            yo mismo (Voglinn), mientras que las tomas del juego las hizo el usuario Sebast912. La canción que suena 
+                            es "Masacre en el puticlub" de Patricio Rey y sus Redonditos de Ricota.
+                        </p>
+                    </article>
+                    <!--***** ARTICULO DE VIDEO O VIDEOS *****-->
+
+                    <article class="videos__articulos">
+                        <div class="rep-videos__contenedor">
+                            <video class="rep-videos__visualizador" poster="./videos/poster_trailer.png" preload="none">
+                                <source data-src="./videos/trailer-gta.mp4" type="video/mp4">
+                                Tu navegador no soporta el video HTML5.
+                            </video>
+                            <div class="rep-videos__controles">
+                                <input type="range" value="0" class="rep-videos__barra-progreso" step="0.1">
+                                <div class="rep-videos__controles_contenedor-botones">
+                                    <button class="rep-videos__boton-mute">
+                                        <i class="fa-solid fa-volume-high rep-videos__icono-mute"></i>
+                                    </button>
+                                    <button class="rep-videos__boton-play-pause">
+                                        <i class="fa-solid fa-play rep-videos__icono-play-pause"></i>
+                                    </button>
+                                    <button class="rep-videos__boton-fullscreen">
+                                        <i class="fa-solid fa-expand rep-videos__icono-fullscreen"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+
+
+                <!--************************ ARTÍCULO DE LA INTRO DEL JUEGO***************************-->
+                <section class="general__contenedor-articulos">
+                    <h3 class="personajes__categoria" id="videos__intros">Intro del juego</h3>
+                    <!--***** DESCRIPCION *****-->
+                    <article class="articulos">
+                        <p class="parrafos-articulos">
+                            Este es el video que se reproduce al inicio del juego, el cual es una reversión de la intro 
+                            original del GTA San Andreas.
+                        </p>
+                        <p class="parrafos-articulos">
+                            En la primera parte, se muestra un logo con el nombre del canal de CoffeTV, y luego el logo de 
+                            Voglinn Games. Luego comienza la canción del juego, se 
+                            muestran algunas imágenes del juego y enumera a todas las personas que participaron, más directa 
+                            o indirectamente, en la elaboración de este mod. Se les da crédito a todas las personas que prestaron 
+                            sus voces para los personajes; a todos los artistas visuales cuyos dibujos, hechos exclusivamente 
+                            para el canal, se usaron en el juego; a todos los músicos cuyas canciones se usaron en las radios; y 
+                            todas las páginas que se utilizaron para hacer las voces de otros personajes con Inteligencia Artificial 
+                            y también las páginas de mods y de texturas del GTA San Andreas que se utilizaron como guía y referencia 
+                            para la realización de este juego. Finalmente se nombra al realizador principal del juego, Voglinn, y 
+                            al streamer para el cual fue hecho, Coffe TV.
+                        </p>
+                        <p class="parrafos-articulos">La música del video fue hecha por BloqMayuss, exclusivamente para 
+                            este mod. Es una reversión de la canción original de la intro del San Andreas, pero con un estilo más 
+                            "Redondos de Ricota". Durante los primeros streams se utilizó el tema original, pero luego se hizo el 
+                            cambio de canción a la que figura en el video.
+                        </p>
+                    </article>
+                    <!--***** ARTICULO DE VIDEO O VIDEOS *****-->
+                    <article class="videos__articulos">
+                        <div class="rep-videos__contenedor">
+                            <video class="rep-videos__visualizador" preload="none" poster="./videos/poster_intro.png">
+                                <source data-src="./videos/intro.mp4" type="video/mp4">
+                                Tu navegador no soporta el video HTML5.
+                            </video>
+                            <div class="rep-videos__controles">
+                                <input type="range" value="0" class="rep-videos__barra-progreso" step="0.1">
+                                <div class="rep-videos__controles_contenedor-botones">
+                                    <button class="rep-videos__boton-mute">
+                                        <i class="fa-solid fa-volume-high rep-videos__icono-mute"></i>
+                                    </button>
+                                    <button class="rep-videos__boton-play-pause">
+                                        <i class="fa-solid fa-play rep-videos__icono-play-pause"></i>
+                                    </button>
+                                    <button class="rep-videos__boton-fullscreen">
+                                        <i class="fa-solid fa-expand rep-videos__icono-fullscreen"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+
+                <!--************************ ARTÍCULO DE LOS CLIPS DEL JUEGO***************************-->
+                <section class="general__contenedor-articulos">
+                    <h3 class="personajes__categoria" id="videos__clips">Clips del las transmisiones en Twitch</h3>
+                    <!--***** DESCRIPCION *****-->
+                    <article class="articulos">
+                        <p class="parrafos-articulos">
+                            Estos son varios clips sacados de las transmisiones de Twitch en las que el Tateiro jugó al juego. 
+                        </p>
+                    </article>
+                    <!--***** ARTICULO DE VIDEO O VIDEOS *****-->
+                    <article class="videos__articulos">
+                        <div class="videos__contenedor_titulo-video">
+                            <h4 class="videos__titulos-clips">Coffe se encuentra con Ale Escuchando</h4>
+                            <div class="rep-videos__contenedor">
+                                <video class="rep-videos__visualizador" preload="none" poster="./videos/clips/poster_ale-escuchando.png">
+                                    <source data-src="./videos/clips/ale-escuchando.mp4" type="video/mp4">
+                                    Tu navegador no soporta el video HTML5.
+                                </video>
+                                <div class="rep-videos__controles">
+                                    <input type="range" value="0" class="rep-videos__barra-progreso" step="0.1">
+                                    <div class="rep-videos__controles_contenedor-botones">
+                                        <button class="rep-videos__boton-mute">
+                                            <i class="fa-solid fa-volume-high rep-videos__icono-mute"></i>
+                                        </button>
+                                        <button class="rep-videos__boton-play-pause">
+                                            <i class="fa-solid fa-play rep-videos__icono-play-pause"></i>
+                                        </button>
+                                        <button class="rep-videos__boton-fullscreen">
+                                            <i class="fa-solid fa-expand rep-videos__icono-fullscreen"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="videos__contenedor_titulo-video">
+                            <h4 class="videos__titulos-clips">Encuentro con Artisteando y Michael Jackson</h4>
+                            <div class="rep-videos__contenedor">
+                                <video class="rep-videos__visualizador" preload="none" poster="./videos/clips/poster_artis-y-michael.png">
+                                    <source data-src="./videos/clips/artis-y-michael.mp4" type="video/mp4">
+                                    Tu navegador no soporta el video HTML5.
+                                </video>
+                                <div class="rep-videos__controles">
+                                    <input type="range" value="0" class="rep-videos__barra-progreso" step="0.1">
+                                    <div class="rep-videos__controles_contenedor-botones">
+                                        <button class="rep-videos__boton-mute">
+                                            <i class="fa-solid fa-volume-high rep-videos__icono-mute"></i>
+                                        </button>
+                                        <button class="rep-videos__boton-play-pause">
+                                            <i class="fa-solid fa-play rep-videos__icono-play-pause"></i>
+                                        </button>
+                                        <button class="rep-videos__boton-fullscreen">
+                                            <i class="fa-solid fa-expand rep-videos__icono-fullscreen"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="videos__contenedor_titulo-video">
+                            <h4 class="videos__titulos-clips">Asaltando la pizzería</h4>
+                            <div class="rep-videos__contenedor">
+                                <video class="rep-videos__visualizador" preload="none" poster="./videos/clips/poster_asaltando-la-pizzeria.png">
+                                    <source data-src="./videos/clips/asaltando-la-pizzeria.mp4" type="video/mp4">
+                                    Tu navegador no soporta el video HTML5.
+                                </video>
+                                <div class="rep-videos__controles">
+                                    <input type="range" value="0" class="rep-videos__barra-progreso" step="0.1">
+                                    <div class="rep-videos__controles_contenedor-botones">
+                                        <button class="rep-videos__boton-mute">
+                                            <i class="fa-solid fa-volume-high rep-videos__icono-mute"></i>
+                                        </button>
+                                        <button class="rep-videos__boton-play-pause">
+                                            <i class="fa-solid fa-play rep-videos__icono-play-pause"></i>
+                                        </button>
+                                        <button class="rep-videos__boton-fullscreen">
+                                            <i class="fa-solid fa-expand rep-videos__icono-fullscreen"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="videos__contenedor_titulo-video">
+                            <h4 class="videos__titulos-clips">El videojuego de la coneja</h4>
+                            <div class="rep-videos__contenedor">
+                                <video class="rep-videos__visualizador" preload="none" poster="./videos/clips/poster_el-juego-de-la-coneja.png">
+                                    <source data-src="./videos/clips/el-juego-de-la-coneja.mp4" type="video/mp4">
+                                    Tu navegador no soporta el video HTML5.
+                                </video>
+                                <div class="rep-videos__controles">
+                                    <input type="range" value="0" class="rep-videos__barra-progreso" step="0.1">
+                                    <div class="rep-videos__controles_contenedor-botones">
+                                        <button class="rep-videos__boton-mute">
+                                            <i class="fa-solid fa-volume-high rep-videos__icono-mute"></i>
+                                        </button>
+                                        <button class="rep-videos__boton-play-pause">
+                                            <i class="fa-solid fa-play rep-videos__icono-play-pause"></i>
+                                        </button>
+                                        <button class="rep-videos__boton-fullscreen">
+                                            <i class="fa-solid fa-expand rep-videos__icono-fullscreen"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="videos__contenedor_titulo-video">
+                            <h4 class="videos__titulos-clips">El videojuego del Bibel</h4>
+                            <div class="rep-videos__contenedor">
+                                <video class="rep-videos__visualizador" preload="none" poster="./videos/clips/poster_el-juego-del-bibel.png">
+                                    <source data-src="./videos/clips/el-juego-del-bibel.mp4" type="video/mp4">
+                                    Tu navegador no soporta el video HTML5.
+                                </video>
+                                <div class="rep-videos__controles">
+                                    <input type="range" value="0" class="rep-videos__barra-progreso" step="0.1">
+                                    <div class="rep-videos__controles_contenedor-botones">
+                                        <button class="rep-videos__boton-mute">
+                                            <i class="fa-solid fa-volume-high rep-videos__icono-mute"></i>
+                                        </button>
+                                        <button class="rep-videos__boton-play-pause">
+                                            <i class="fa-solid fa-play rep-videos__icono-play-pause"></i>
+                                        </button>
+                                        <button class="rep-videos__boton-fullscreen">
+                                            <i class="fa-solid fa-expand rep-videos__icono-fullscreen"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        
+                        <div class="videos__contenedor_titulo-video">
+                            <h4 class="videos__titulos-clips">Empezando el juego</h4>
+                            <div class="rep-videos__contenedor">
+                                <video class="rep-videos__visualizador" preload="none" poster="./videos/clips/poster_empezando-el-juego.png">
+                                    <source data-src="./videos/clips/empezando-el-juego.mp4" type="video/mp4">
+                                    Tu navegador no soporta el video HTML5.
+                                </video>
+                                <div class="rep-videos__controles">
+                                    <input type="range" value="0" class="rep-videos__barra-progreso" step="0.1">
+                                    <div class="rep-videos__controles_contenedor-botones">
+                                        <button class="rep-videos__boton-mute">
+                                            <i class="fa-solid fa-volume-high rep-videos__icono-mute"></i>
+                                        </button>
+                                        <button class="rep-videos__boton-play-pause">
+                                            <i class="fa-solid fa-play rep-videos__icono-play-pause"></i>
+                                        </button>
+                                        <button class="rep-videos__boton-fullscreen">
+                                            <i class="fa-solid fa-expand rep-videos__icono-fullscreen"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="videos__contenedor_titulo-video">
+                            <h4 class="videos__titulos-clips">Conociendo al Bibel</h4>
+                            <div class="rep-videos__contenedor">
+                                <video class="rep-videos__visualizador" preload="none" poster="./videos/clips/poster_encontrando-al-bibel.png">
+                                    <source data-src="./videos/clips/encontrando-al-bibel.mp4" type="video/mp4">
+                                    Tu navegador no soporta el video HTML5.
+                                </video>
+                                <div class="rep-videos__controles">
+                                    <input type="range" value="0" class="rep-videos__barra-progreso" step="0.1">
+                                    <div class="rep-videos__controles_contenedor-botones">
+                                        <button class="rep-videos__boton-mute">
+                                            <i class="fa-solid fa-volume-high rep-videos__icono-mute"></i>
+                                        </button>
+                                        <button class="rep-videos__boton-play-pause">
+                                            <i class="fa-solid fa-play rep-videos__icono-play-pause"></i>
+                                        </button>
+                                        <button class="rep-videos__boton-fullscreen">
+                                            <i class="fa-solid fa-expand rep-videos__icono-fullscreen"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="videos__contenedor_titulo-video">
+                            <h4 class="videos__titulos-clips">Conociendo a FatiV13 y descubriendo un amorío</h4>
+                            <div class="rep-videos__contenedor">
+                                <video class="rep-videos__visualizador" preload="none" poster="./videos/clips/poster_fati-corre-y-nicolino-sin-polvo.png">
+                                    <source data-src="./videos/clips/fati-corre-y-nicolino-sin-polvo.mp4" type="video/mp4">
+                                    Tu navegador no soporta el video HTML5.
+                                </video>
+                                <div class="rep-videos__controles">
+                                    <input type="range" value="0" class="rep-videos__barra-progreso" step="0.1">
+                                    <div class="rep-videos__controles_contenedor-botones">
+                                        <button class="rep-videos__boton-mute">
+                                            <i class="fa-solid fa-volume-high rep-videos__icono-mute"></i>
+                                        </button>
+                                        <button class="rep-videos__boton-play-pause">
+                                            <i class="fa-solid fa-play rep-videos__icono-play-pause"></i>
+                                        </button>
+                                        <button class="rep-videos__boton-fullscreen">
+                                            <i class="fa-solid fa-expand rep-videos__icono-fullscreen"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="videos__contenedor_titulo-video">
+                            <h4 class="videos__titulos-clips">Coffe intenta robar una moto</h4>
+                            <div class="rep-videos__contenedor">
+                                <video class="rep-videos__visualizador" preload="none" poster="./videos/clips/poster_intenta-robar-moto.png">
+                                    <source data-src="./videos/clips/intenta-robar-moto.mp4" type="video/mp4">
+                                    Tu navegador no soporta el video HTML5.
+                                </video>
+                                <div class="rep-videos__controles">
+                                    <input type="range" value="0" class="rep-videos__barra-progreso" step="0.1">
+                                    <div class="rep-videos__controles_contenedor-botones">
+                                        <button class="rep-videos__boton-mute">
+                                            <i class="fa-solid fa-volume-high rep-videos__icono-mute"></i>
+                                        </button>
+                                        <button class="rep-videos__boton-play-pause">
+                                            <i class="fa-solid fa-play rep-videos__icono-play-pause"></i>
+                                        </button>
+                                        <button class="rep-videos__boton-fullscreen">
+                                            <i class="fa-solid fa-expand rep-videos__icono-fullscreen"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="videos__contenedor_titulo-video">
+                            <h4 class="videos__titulos-clips">La Nona en el piso</h4>
+                            <div class="rep-videos__contenedor">
+                                <video class="rep-videos__visualizador" preload="none" poster="./videos/clips/poster_la-nona-en-el-piso.png">
+                                    <source data-src="./videos/clips/la-nona-en-el-piso.mp4" type="video/mp4">
+                                    Tu navegador no soporta el video HTML5.
+                                </video>
+                                <div class="rep-videos__controles">
+                                    <input type="range" value="0" class="rep-videos__barra-progreso" step="0.1">
+                                    <div class="rep-videos__controles_contenedor-botones">
+                                        <button class="rep-videos__boton-mute">
+                                            <i class="fa-solid fa-volume-high rep-videos__icono-mute"></i>
+                                        </button>
+                                        <button class="rep-videos__boton-play-pause">
+                                            <i class="fa-solid fa-play rep-videos__icono-play-pause"></i>
+                                        </button>
+                                        <button class="rep-videos__boton-fullscreen">
+                                            <i class="fa-solid fa-expand rep-videos__icono-fullscreen"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="videos__contenedor_titulo-video">
+                            <h4 class="videos__titulos-clips">La picó Mister Kleis</h4>
+                            <div class="rep-videos__contenedor">
+                                <video class="rep-videos__visualizador" preload="none" poster="./videos/clips/poster_la-pico-mr-kleis.png">
+                                    <source data-src="./videos/clips/la-pico-mr-kleis.mp4" type="video/mp4">
+                                    Tu navegador no soporta el video HTML5.
+                                </video>
+                                <div class="rep-videos__controles">
+                                    <input type="range" value="0" class="rep-videos__barra-progreso" step="0.1">
+                                    <div class="rep-videos__controles_contenedor-botones">
+                                        <button class="rep-videos__boton-mute">
+                                            <i class="fa-solid fa-volume-high rep-videos__icono-mute"></i>
+                                        </button>
+                                        <button class="rep-videos__boton-play-pause">
+                                            <i class="fa-solid fa-play rep-videos__icono-play-pause"></i>
+                                        </button>
+                                        <button class="rep-videos__boton-fullscreen">
+                                            <i class="fa-solid fa-expand rep-videos__icono-fullscreen"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="videos__contenedor_titulo-video">
+                            <h4 class="videos__titulos-clips">Mataron al Bibel</h4>
+                            <div class="rep-videos__contenedor">
+                                <video class="rep-videos__visualizador" preload="none" poster="./videos/clips/poster_mataron-al-bibel.png">
+                                    <source data-src="./videos/clips/mataron-al-bibel.mp4" type="video/mp4">
+                                    Tu navegador no soporta el video HTML5.
+                                </video>
+                                <div class="rep-videos__controles">
+                                    <input type="range" value="0" class="rep-videos__barra-progreso" step="0.1">
+                                    <div class="rep-videos__controles_contenedor-botones">
+                                        <button class="rep-videos__boton-mute">
+                                            <i class="fa-solid fa-volume-high rep-videos__icono-mute"></i>
+                                        </button>
+                                        <button class="rep-videos__boton-play-pause">
+                                            <i class="fa-solid fa-play rep-videos__icono-play-pause"></i>
+                                        </button>
+                                        <button class="rep-videos__boton-fullscreen">
+                                            <i class="fa-solid fa-expand rep-videos__icono-fullscreen"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="videos__contenedor_titulo-video">
+                            <h4 class="videos__titulos-clips">Paseando con Anna Cubick</h4>
+                            <div class="rep-videos__contenedor">
+                                <video class="rep-videos__visualizador" preload="none" poster="./videos/clips/poster_paseando-con-anna.png">
+                                    <source data-src="./videos/clips/paseando-con-anna.mp4" type="video/mp4">
+                                    Tu navegador no soporta el video HTML5.
+                                </video>
+                                <div class="rep-videos__controles">
+                                    <input type="range" value="0" class="rep-videos__barra-progreso" step="0.1">
+                                    <div class="rep-videos__controles_contenedor-botones">
+                                        <button class="rep-videos__boton-mute">
+                                            <i class="fa-solid fa-volume-high rep-videos__icono-mute"></i>
+                                        </button>
+                                        <button class="rep-videos__boton-play-pause">
+                                            <i class="fa-solid fa-play rep-videos__icono-play-pause"></i>
+                                        </button>
+                                        <button class="rep-videos__boton-fullscreen">
+                                            <i class="fa-solid fa-expand rep-videos__icono-fullscreen"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="videos__contenedor_titulo-video">
+                            <h4 class="videos__titulos-clips">Saliendo de la peluquería</h4>
+                            <div class="rep-videos__contenedor">
+                                <video class="rep-videos__visualizador" preload="none" poster="./videos/clips/poster_saliendo-de-la-peluqueria.png">
+                                    <source data-src="./videos/clips/saliendo-de-peluqueria.mp4" type="video/mp4">
+                                    Tu navegador no soporta el video HTML5.
+                                </video>
+                                <div class="rep-videos__controles">
+                                    <input type="range" value="0" class="rep-videos__barra-progreso" step="0.1">
+                                    <div class="rep-videos__controles_contenedor-botones">
+                                        <button class="rep-videos__boton-mute">
+                                            <i class="fa-solid fa-volume-high rep-videos__icono-mute"></i>
+                                        </button>
+                                        <button class="rep-videos__boton-play-pause">
+                                            <i class="fa-solid fa-play rep-videos__icono-play-pause"></i>
+                                        </button>
+                                        <button class="rep-videos__boton-fullscreen">
+                                            <i class="fa-solid fa-expand rep-videos__icono-fullscreen"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="videos__contenedor_titulo-video">
+                            <h4 class="videos__titulos-clips">Voglinn dice "hola" de la nada</h4>
+                            <div class="rep-videos__contenedor">
+                                <video class="rep-videos__visualizador" preload="none" poster="./videos/clips/poster_voglin-hola.png">
+                                    <source data-src="./videos/clips/voglin-hola.mp4" type="video/mp4">
+                                    Tu navegador no soporta el video HTML5.
+                                </video>
+                                <div class="rep-videos__controles">
+                                    <input type="range" value="0" class="rep-videos__barra-progreso" step="0.1">
+                                    <div class="rep-videos__controles_contenedor-botones">
+                                        <button class="rep-videos__boton-mute">
+                                            <i class="fa-solid fa-volume-high rep-videos__icono-mute"></i>
+                                        </button>
+                                        <button class="rep-videos__boton-play-pause">
+                                            <i class="fa-solid fa-play rep-videos__icono-play-pause"></i>
+                                        </button>
+                                        <button class="rep-videos__boton-fullscreen">
+                                            <i class="fa-solid fa-expand rep-videos__icono-fullscreen"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                    </article>
+                </section>
             </div>
 
-            <!--********************** FOOTER *************************-->
-            <footer class="footer">
-                <div class="footer__grupo-logo">
-                    <img class="footer__logo-voglinn-games" src="./img/footer-logo-voglinn-games.png" title="Voglinn Games">
-                    <span class="footer__texto">Voglinn Games © 2024</span>
-                </div>
-                <div class="footer__grupo-info-1">
-                    <span class="footer__texto">Editado por última vez el 13/07/2024</span>
-                    <span class="footer__texto">Buenos Aires, Argentina</span>
-                </div>
-                <div class="footer__grupo-info-2">
-                    <span class="footer__texto footer__link">Políticas de privacidad</span>
-                    <span class="footer__texto footer__link">Contacto</span>
-                </div>
-            </footer>
+        
 
             <!--************************ BOTÓN DE SUBIR ARRIBA ***********************-->
             <span class="boton-subir-arriba" title="Volver arriba" id="boton-subir-arriba">
                 <i class="fa-solid fa-circle-chevron-up"></i>
             </span>
         </main>
+        <!--*******************************************************-->
+        <!--********************** FOOTER *************************-->
+        <footer class="footer">
+            <div class="footer__grupo-logo">
+                <img class="footer__logo-voglinn-games" src="./img/footer-logo-voglinn-games.png" title="Voglinn Games">
+                <span class="footer__texto">Voglinn Games © 2024</span>
+            </div>
+            <div class="footer__grupo-info-1">
+                <span class="footer__texto">Editado por última vez el 24/04/2025</span>
+                <span class="footer__texto">Buenos Aires, Argentina</span>
+            </div>
+            <div class="footer__grupo-info-2">
+                <span class="footer__texto footer__link">Políticas de privacidad</span>
+                <span class="footer__texto footer__link">Contacto</span>
+            </div>
+        </footer>
     </body>
 </html>

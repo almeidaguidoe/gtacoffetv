@@ -965,6 +965,139 @@ html {
     cursor: pointer;
 }
 
+/*################ PÁGINA VIDEOS #################*/
+
+.videos__articulos {
+    background: #22012c;
+    border-radius: 15px;
+    padding: 15px;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.videos__contenedor_titulo-video {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: max-content;
+}
+
+.videos__titulos-clips {
+    color: #fff;
+    font-size: calc(14px + 1vh);
+}
+
+/*################# REPRODUCTORES DE VIDEO ################*/
+
+.rep-videos__contenedor {
+    position: relative;
+    max-width: 600px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.rep-videos__visualizador {
+    width: 100%;
+}
+
+.rep-videos__controles {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to top, #000000, rgba(0, 0, 0, 0));
+    padding: 15px;
+    gap: 15px;
+    opacity: 1;
+    transition: opacity .3s ease;
+}
+
+.rep-videos__controles.oculto {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.rep-videos__contenedor .rep-videos__controles:not(.oculto) {
+    opacity: 1;
+    
+}
+
+.rep-videos__controles_contenedor-botones {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rep-videos__barra-progreso {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 7px;
+    background: rgba(165, 165, 165, 0.4);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.rep-videos__barra-progreso::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    background: rgba(165, 165, 165, 0.9);
+    width: 16px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    outline: 4px solid #fff;
+    box-shadow: 0 6px 10px rgba(228, 228, 228, 0.3);
+}
+
+.rep-videos__boton-play-pause {
+    width: 55px;
+    aspect-ratio: 1/1;
+    background: rgba(165, 165, 165, 0.3);
+    color: #fff;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    outline: 0;
+    font-size: 1.6rem;
+    box-shadow: 0 6px 10px rgba(228, 228, 228, 0.3);
+    cursor: pointer;
+    transition: all .3s ease;
+    
+}
+
+.rep-videos__boton-play-pause:hover {
+    transform: scale(1.1);
+}
+
+.rep-videos__boton-mute,
+.rep-videos__boton-fullscreen {
+    width: 55px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: none;
+    color: #fff;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.rep-videos__boton-mute:hover,
+.rep-videos__icono-fullscreen:hover {
+    transform: scale(1.1);
+}
+
+.rep-videos__icono-mute,
+.rep-videos__icono-fullscreen {
+    filter: drop-shadow(0 6px 10px rgba(228, 228, 228, 0.5));
+}
+
 
 /*################# REPRODUCTORES DE MÚSICA ################*/
 
