@@ -57,7 +57,9 @@ document.querySelectorAll('.rep-videos__contenedor').forEach(repr => {
 
     //Cambiar la posición del video con la barra de progreso
     barraProgreso.addEventListener('input', () => {
-        video.currentTime = (barraProgreso.value / 100) * video.duration;
+        if (isFinite(video.duration)) { //me aseguro que el valor de video.duration sea un valor válido
+            video.currentTime = (barraProgreso.value / 100) * video.duration;
+        }
     });
 
     //Botón de mute: mutear el audio y cambiar el icono
