@@ -246,12 +246,14 @@ html {
 }
 
 .foto-art-derecha {
+    border-radius: 10px;
     float: right;
     max-width: 400px;
     margin: 0 0 10px 15px;
 }
 
 .foto-art-izquierda {
+    border-radius: 10px;
     float: left;
     max-width: 500px;
     margin: 0 15px 10px 0 ;
@@ -553,6 +555,7 @@ html {
 .foto-mapa {
     align-self: center;
     max-width: 100%;
+    margin: 10px;
 }
 
 /*---------- SECCIÓN LOCALES DE COMIDA ------------*/
