@@ -871,6 +871,10 @@ html {
     color: #fff;
 }
 
+.galeria__parrafos-articulos {
+    color: #fff;
+}
+
 .galeria__contenedor-imagenes {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
