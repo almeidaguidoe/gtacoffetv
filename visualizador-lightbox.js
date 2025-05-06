@@ -1,26 +1,48 @@
 const galeriaImagenes = document.querySelectorAll('.galeria__imagen');
 const galeriaContainerImg = document.querySelector('.galeria__container-img');
-const galeriaImgShow = document.querySelector('.galeria__img-show');
-const galeriaImgCopy = document.querySelector('.galeria__copy');
+const visualizadorImgShow = document.querySelector('.galeria__img-show');
+const visualizadorCopy = document.querySelector('.galeria__copy');
+const visualizadorIconoCerrar = document.querySelector('.vis-img__icono-cerrar');
+const visualizadorFlechaIzq = document.querySelector('.galeria__flecha-izq');
+const visualizadorFlechaDer = document.querySelector('.galeria__flecha-der');
+
+let grupoActual = '';
+let imagenesGrupo = [];
+let indiceActual = 0;
 
 galeriaImagenes.forEach(img => {
     img.addEventListener('click', ()=>{
+        //toma el nombre del grupo que pusimos en "data-grupo" en el HTML
+        grupoActual = img.dataset.grupo; 
+        //forma un array con todos los elementos que tengan la clase "galeria__imagen" 
+        // y además que tengan como data-grupo lo mismo que la imagen clickeada
+        imagenesGrupo = Array.from(document.querySelectorAll(`.galeria__imagen[data-grupo="${grupoActual}"]`));
+        indiceActual = imagenesGrupo.indexOf(img);
         
-        galeriaAgregarImg(img.getAttribute('src'), img.getAttribute('alt'));
-    })
-})
+        mostrarImagenActual();
+        galeriaContainerImg.classList.add('galeria__img-move');
+        visualizadorImgShow.classList.add('galeria__mostrar-img');
+    });
+});
 
-const galeriaAgregarImg = (srcImg, altImg)=>{
+const mostrarImagenActual = () => {
+    const img = imagenesGrupo[indiceActual];
+    const srcAlta = img.src.replace('_mini', '');
+    visualizadorImgShow.src = srcAlta;
+    visualizadorCopy.innerText = img.alt;
+};
 
-    const srcImgAlta = srcImg.replace('_mini', '');
+visualizadorFlechaIzq.addEventListener('click', () => {
+    indiceActual = (indiceActual - 1 + imagenesGrupo.length) % imagenesGrupo.length;
+    mostrarImagenActual();
+});
 
-    galeriaContainerImg.classList.toggle('galeria__img-move');
-    galeriaImgShow.classList.toggle('galeria__mostrar-img');
-    galeriaImgShow.src = srcImgAlta;
-    galeriaImgCopy.innerHTML = altImg;
-}
+visualizadorFlechaDer.addEventListener('click', () => {
+    indiceActual = (indiceActual + 1) % imagenesGrupo.length;
+    mostrarImagenActual();
+});
 
-galeriaContainerImg.addEventListener('click', ()=>{
-    galeriaContainerImg.classList.toggle('galeria__img-move');
-    galeriaImgShow.classList.toggle('galeria__mostrar-img');
+visualizadorIconoCerrar.addEventListener('click', ()=>{
+    galeriaContainerImg.classList.remove('galeria__img-move');
+    visualizadorImgShow.classList.remove('galeria__mostrar-img');
 });

@@ -828,7 +828,7 @@ html {
 .galeria-indice__contenedor-items-primarios {
 
     padding: 10px;
-    width: 25%;
+    width: 20%;
 
     border-left: 3px solid #5e0359;
     display: flex;
@@ -897,7 +897,7 @@ html {
 }
 
 .galeria__imagen:hover {
-    border: 5px solid #07ad4c;
+    border: 5px solid #ff52ff;
     cursor: pointer;
     transition: border .5s;
 }
@@ -937,6 +937,7 @@ html {
     top: 0;
     left: 0;
     background: rgba(0,0,0,.8);
+    z-index: 20;
 
     display: flex;
     justify-content: center;
@@ -976,6 +977,34 @@ html {
     right: 20px;
     font-size: 40px;
     cursor: pointer;
+    transition: all ease .5s;
+}
+
+.vis-img__icono-cerrar:hover {
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 1));
+}
+
+.galeria__flecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 10;
+    transition: all ease .5s;
+}
+
+.galeria__flecha:hover {
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 1));
+}
+
+.galeria__flecha-izq {
+    left: 30px;
+}
+
+.galeria__flecha-der {
+    right: 30px;
 }
 
 /*################ PÁGINA VIDEOS #################*/
@@ -1282,7 +1311,7 @@ html {
     line-height: 50px;
     transition: .5s ease all;
     cursor: pointer;
-    z-index: 1000;
+    z-index: 10;
     display: none;
 }
 
