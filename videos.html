@@ -16,6 +16,7 @@
         <!--JAVASCRIPT-->
         <script src="./scripts.js" defer></script>
         <script src="./reproductor-video.js" defer></script>
+        <script src="./buscador.js" defer></script>
 
         <title>Galería | GTA CoffeTV</title>
 
@@ -52,6 +53,17 @@
                         <a href="./videos.html" class="navegador__botones">Videos</a>
                     </div>
                 </nav>
+
+                <!--************************ BUSCADOR ************************-->
+                <div class="aside__contenedor">
+                    <h3 class="aside__titulo">Buscador</h3>
+                    <form class="buscador__contenedor" id="form-buscador">
+                        <input type="text" id="buscador__input" class="buscador__input" placeholder="Ingresar...">
+                        <button type="submit" id="buscador__boton-buscar" class="buscador__boton-buscar">Buscar</button>
+                    </form>
+                    <div id="buscador__resultados" class="buscador__resultados"></div>
+                </div>
+
                 <!--************************ REDES ************************-->
                 <div class="aside__contenedor redes">
                     <h3 class="aside__titulo">Redes</h3>

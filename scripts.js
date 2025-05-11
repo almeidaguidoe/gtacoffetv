@@ -1,3 +1,4 @@
+
 /* BOTON MOSTRAR MENU LATERAL */
 
 const botonMostrarMenu = document.getElementById('boton-mostrar-menu-lateral');

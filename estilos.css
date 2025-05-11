@@ -77,6 +77,7 @@ html {
     width: 100%;
     background: #5e0359;
     border-radius: 15px;
+    overflow: hidden;
 }
 
 .aside__titulo {
@@ -120,6 +121,99 @@ html {
 .navegador__botones:hover {
     background: #5e0359;
     color: #fff;
+}
+
+/*-------------------- BUSCADOR ------------------*/
+
+.buscador__contenedor {
+    background: #ee9c9c;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.buscador__input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 3px solid rgba(0, 0, 0, 0);
+    transition: .5s ease all;
+}
+
+.buscador__input:focus {
+    border: 3px solid #af0f5f;
+}
+
+.buscador__boton-buscar {
+    align-self: flex-end;
+
+    appearance: none;
+    border: none;
+    padding: 5px 10px;
+    background: #af0f5f;
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition: .5s ease all;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color:#fff;
+    font-size: 20px;
+}
+
+.buscador__boton-buscar:hover {
+    background:#5e0359;
+    color: #fff;
+}
+
+.buscador__resultados {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    background: #ee9c9c;
+    border-radius: 0 0 15px 15px;
+    overflow: hidden;
+
+    position: absolute;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: .5s ease all;
+}
+
+.buscador__resultados p {
+    color:#5e0359;
+}
+
+.buscador__resultados.mostrar {
+    position: relative;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.buscador__resultados a {
+    background: #ffe6f5;
+    padding: 8px;
+    border-radius: 6px;
+
+    text-decoration: none;
+    font-weight: 600;
+    color:#5e0359;
+
+    transition: .5s ease all;
+}
+
+.buscador__resultados a:hover {
+    background:#5e0359;
+    color:#fff;
 }
 
 /*-------------------- REDES ------------------*/

@@ -15,6 +15,7 @@
 
         <!--JAVASCRIPT-->
         <script src="./scripts.js" defer></script>
+        <script src="./buscador.js" defer></script>
 
         <title>Home | GTA CoffeTV</title>
 
@@ -41,7 +42,7 @@
                 </div>
                 <!--************************ NAVEGADOR ************************-->
                 <nav class="aside__contenedor navegador">
-                    <h3 class="aside__titulo" >Navegación</h3>
+                    <h3 class="aside__titulo">Navegación</h3>
                     <div class="navegador__contenedor-botones">
                         <a href="./index.html" class="navegador__botones">Home</a>
                         <a href="./personajes.html" class="navegador__botones">Personajes</a>
@@ -51,6 +52,16 @@
                         <a href="./videos.html" class="navegador__botones">Videos</a>
                     </div>
                 </nav>
+                <!--************************ BUSCADOR ************************-->
+                <div class="aside__contenedor">
+                    <h3 class="aside__titulo">Buscador</h3>
+                    <form class="buscador__contenedor" id="form-buscador">
+                        <input type="text" id="buscador__input" class="buscador__input" placeholder="Ingresar...">
+                        <button type="submit" id="buscador__boton-buscar" class="buscador__boton-buscar">Buscar</button>
+                    </form>
+                    <div id="buscador__resultados" class="buscador__resultados"></div>
+                </div>
+                
                 <!--************************ REDES ************************-->
                 <div class="aside__contenedor redes">
                     <h3 class="aside__titulo">Redes</h3>
@@ -97,7 +108,7 @@
                 <div class="contenedor-articulos">
 
                     <!--********************** ARTICULO QUÉ ES EL GTA COFFETV *************************-->
-                    <article class="articulos">
+                    <article class="articulos" id="home__introduccion">
                         <h3 class="titulos-articulos">¿Qué es el GTA CoffeTV?</h3>
                         <img src="./img/articulo-intro-1.png" class="foto-art-derecha" title="Coffe TV"
                             alt="captura de la primera cinemática del juego, está el personaje de Coffe TV en un aeropuerto tomando su valija">
@@ -119,7 +130,7 @@
                     </article>
 
                     <!--********************** ARTICULO ARGUMENTO DEL JUEGO *************************-->
-                    <article class="articulos">
+                    <article class="articulos" id="home__argumento">
                         <h3 class="titulos-articulos">Argumento del juego</h3>
                         <img src="./img/articulo-argumento-1.png" class="foto-art-izquierda" title="Baicito, Rita y Coffe"
                             alt="captura de una cinemática del juego en la que están hablando Baicito, Rita y Coffe, con unos árboles de fondo">
@@ -157,9 +168,9 @@
                     </article>
 
                     <!--********************** ARTICULO NOVEDADES *************************-->
-                    <article class="articulos articulos__novedades">
+                    <article class="articulos articulos__novedades" >
                         <h3 class="titulos-articulos novedades__titulo-principal">Novedades</h3>
-                        <div class="novedades__grupo">
+                        <div class="novedades__grupo" id="novedades__capitulo-4">
                             <h4 class="novedades__titulo">GTA CoffeTV - Capítulo 4</h4>
                             <img class="novedades__img" src="./img/novedades-capitulo-4.png" title="GTA CoffeTV - Capítulo 4" alt="miniatura del video de YouTube del capítulo 4 de la transmisión del juego, la miniatura muestra a Coffe y a John Frustrante frente a frente">
                             <p class="novedades__texto">Ya está el capítulo 4 en YouTube! Coffe ayuda a La Tana a robarle a Guillermo Francella, 
@@ -169,7 +180,7 @@
                             </p>
                             <a class="novedades__link" href="https://youtu.be/uIAwCW0QtJE?si=n3-xgH7cY0xPMdin" target="_blank">Ver video</a>
                         </div>
-                        <div class="novedades__grupo">
+                        <div class="novedades__grupo" id="novedades__capitulo-3">
                             <h4 class="novedades__titulo">GTA CoffeTV - Capítulo 3</h4>
                             <img class="novedades__img" src="./img/novedades-capitulo-3.png" title="GTA CoffeTV - Capítulo 3" alt="miniatura del video de 
                                 YouTube del capítulo 3 de la transmisión del juego, la miniatura muestra a Coffe, la Tana, Baicito y el Nes en el coche
@@ -180,7 +191,7 @@
                             </p>
                             <a class="novedades__link" href="https://youtu.be/ELv2I0S-YMU?si=71lzaKhtV98kwhYj" target="_blank">Ver video</a>
                         </div>
-                        <div class="novedades__grupo">
+                        <div class="novedades__grupo" id="novedades__capitulo-2">
                             <h4 class="novedades__titulo">GTA CoffeTV - Capítulo 2</h4>
                             <img class="novedades__img" src="./img/novedades-capitulo-2.png" title="GTA CoffeTV - Capítulo 2" alt="miniatura del video de 
                                 YouTube del capítulo 2 de la transmisión del juego, la miniatura muestra a Coffe y la Tana mirando hacia abajo, hacia la cámara,
@@ -191,7 +202,7 @@
                             </p>
                             <a class="novedades__link" href="https://youtu.be/lcMbA3tiXR8?si=MMeK6BwwR_YpmaOn" target="_blank">Ver video</a>
                         </div>
-                        <div class="novedades__grupo">
+                        <div class="novedades__grupo" id="novedades__capitulo-1">
                             <h4 class="novedades__titulo">GTA CoffeTV - Capítulo 1</h4>
                             <img class="novedades__img" src="./img/novedades-capitulo-1.png" title="GTA CoffeTV - Capítulo 1" alt="miniatura del video de 
                                 YouTube del capítulo 1 de la transmisión del juego, la miniatura muestra el personaje de Coffe en posición de pelea, 
