@@ -118,6 +118,372 @@ const indexBuscador = [
         titulo: "Personajes: Scooby Doo",
         contenido: "scooby doo, policias, policías"
     },
+    {
+        url: "personajes.html#pj__la-jabru",
+        titulo: "Personajes: La Jabru",
+        contenido: "la jabru, la bruja"
+    },
+    {
+        url: "personajes.html#pj__la-jabru",
+        titulo: "Personajes: La Jabru",
+        contenido: "la jabru, la bruja"
+    },
+    {
+        url: "personajes.html#pj__meli-yecca",
+        titulo: "Personajes: Meli Yecca",
+        contenido: "la meli yecca, melina yecca, la memu yecca, la memi yecca, la memucha"
+    },
+    {
+        url: "personajes.html#pj__dogi-the-dog",
+        titulo: "Personajes: Dogi The Dog",
+        contenido: "dogi the dog, dogy the dog, doggy the dog"
+    },
+    {
+        url: "personajes.html#pj__shaggy",
+        titulo: "Personajes: Shaggy",
+        contenido: "shaggy doo, shagi, shaggi, shagy, yagi, yaggi, yagui, shagui, yagy, yaggy"
+    },
+    {
+        url: "personajes.html#pj__banda-ingleses-brazucas",
+        titulo: "Personajes: Ingleses Brazucas",
+        contenido: "banda ingleses brazucas, brasucas, hinchas brasil, hinchas inglaterra, hincha"
+    },
+    {
+        url: "personajes.html#pj__roma-vargas",
+        titulo: "Personajes: Roma Vargas",
+        contenido: "roma vargas, roma vargass, romita"
+    },
+    {
+        url: "personajes.html#pj__kramer",
+        titulo: "Personajes: Kramer",
+        contenido: "kramer cinema, krammer"
+    },
+    {
+        url: "personajes.html#pj__butterfly-meh",
+        titulo: "Personajes: Butterfly Meh",
+        contenido: "butterfly meh, butter, mhe, me"
+    },
+    {
+        url: "personajes.html#pj__kramer",
+        titulo: "Personajes: Kramer",
+        contenido: "kramer cinema, krammer"
+    },
+    {
+        url: "personajes.html#pj__caro-dulce",
+        titulo: "Personajes: Caro Dulce",
+        contenido: "caro dulce, carito dulce, carolina dulce"
+    },
+    {
+        url: "personajes.html#pj__silgonz",
+        titulo: "Personajes: Silgonz",
+        contenido: "silgonz, silgons"
+    },
+    {
+        url: "personajes.html#pj__vuelo-de-tortuga",
+        titulo: "Personajes: Vuelo de Tortuga",
+        contenido: "vuelo de tortuga, vuelito"
+    },
+    {
+        url: "personajes.html#pj__fuerzas-de-seguridad",
+        titulo: "Personajes: Fuerzas de Seguridad",
+        contenido: "fuerzas de seguridad, policia, ejercito, swat, cana, yuta, fuersas"
+    },
+    {
+        url: "personajes.html#pj__candelixx",
+        titulo: "Personajes: Candelixx",
+        contenido: "candelixx, candelix"
+    },
+    {
+        url: "personajes.html#pj__wos",
+        titulo: "Personajes: Wos",
+        contenido: "wos, wosito"
+    },
+    {
+        url: "personajes.html#pj__arnold-schwarzenegger",
+        titulo: "Personajes: Arnold Schwarzenegger",
+        contenido: "arnold schwarzenegger, schwarzeneger, schwarsenegger, scwarseneger, schwarzennegger, schwarzenneger, schwarsennegger, schuarzenegger, schuarzeneger, schuarzennegger, schuarsenegger, schuarsennegger, schuarsenneger, chwarzenegger, chwarzeneger, chwarzennegger, chwarzenneger, chwarsenegger, chwarseneger, chwarsenneger, chwarsennegger, chuarzenegger, chuarzeneger, chuarzennegger, chuarzenneger, chuarsenegger, chuarseneger, chuarsenneger, chuarsennegger,"
+    },
+    {
+        url: "personajes.html#pj__gus-fring",
+        titulo: "Personajes: Gus Fring",
+        contenido: "gustavo fring, gus fring"
+    },
+    {
+        url: "personajes.html#pj__el-pichi-ciego",
+        titulo: "Personajes: El Pichi Ciego",
+        contenido: "el pichi ciego"
+    },
+    {
+        url: "personajes.html#pj__richard-glam",
+        titulo: "Personajes: Richard Glam",
+        contenido: "richard glam, ricardo"
+    },
+    {
+        url: "personajes.html#pj__mi-amigo-mac",
+        titulo: "Personajes: Mi Amigo Mac",
+        contenido: "mi amigo mac"
+    },
+    {
+        url: "personajes.html#pj__monguito",
+        titulo: "Personajes: Monguito",
+        contenido: "monguito"
+    },
+    {
+        url: "personajes.html#pj__ale-escuchando",
+        titulo: "Personajes: Ale Escuchando",
+        contenido: "ale escuchando"
+    },
+    {
+        url: "personajes.html#pj__anna-cubick",
+        titulo: "Personajes: Anna Cubick",
+        contenido: "anna cubick, ana, anita, analia, kubick, kubrick, cubrick, cubik, cubrik, kubik, kubrik"
+    },
+    {
+        url: "personajes.html#pj__artisteando",
+        titulo: "Personajes: Artisteando",
+        contenido: "artisteando, artis, anita"
+    },
+    {
+        url: "personajes.html#pj__bella",
+        titulo: "Personajes: Bella",
+        contenido: "bella swan bella crepusculo"
+    },
+    {
+        url: "personajes.html#pj__el-bibel",
+        titulo: "Personajes: El Bibel",
+        contenido: "el bibel, el bibble, el bible"
+    },
+    {
+        url: "personajes.html#pj__bloq-mayuss",
+        titulo: "Personajes: Bloq Mayuss",
+        contenido: "bloq mayuss, bloq mayus, block mayus, block mayuss"
+    },
+    {
+        url: "personajes.html#pj__bloq-mayuss-tecla",
+        titulo: "Personajes: Bloq Mayuss Tecla",
+        contenido: "bloq mayuss tecla, bloq mayus tecla, block mayus tecla, block mayuss tecla"
+    },
+    {
+        url: "personajes.html#pj__caio-gasolero",
+        titulo: "Personajes: Caio Gasolero",
+        contenido: "caio gasolero"
+    },
+    {
+        url: "personajes.html#pj__cande-ri",
+        titulo: "Personajes: Cande Ri",
+        contenido: "cande ri, candelaria ri, candela"
+    },
+    {
+        url: "personajes.html#pj__caro-mejorescortos15",
+        titulo: "Personajes: Caro MejoresCortos15",
+        contenido: "caro mejorescortos15, caro mejorescortos, caro mejores cortos, caro emjores cortos 15, carolina"
+    },
+    {
+        url: "personajes.html#pj__chambuchito-de-miga",
+        titulo: "Personajes: Chambuchito de Miga",
+        contenido: "chambuchito de miga, chambu, sanguchito de miga"
+    },
+    {
+        url: "personajes.html#pj__chimuelo",
+        titulo: "Personajes: Chimuelo",
+        contenido: "chimuelo, chimu, el chimu, el chimuelo"
+    },
+    {
+        url: "personajes.html#pj__corazon-de-pizza",
+        titulo: "Personajes: Corazón de Pizza",
+        contenido: "corazon de pizza, corazon de pija"
+    },
+    {
+        url: "personajes.html#pj__dark-tana",
+        titulo: "Personajes: Dark Tana",
+        contenido: "la tana lamorte, tanita, tanuki, tanathea, moderadoras, mods, dark tana, dark tana lamorte"
+    },
+    {
+        url: "personajes.html#pj__dibu",
+        titulo: "Personajes: El Dibu",
+        contenido: "el dibu"
+    },
+    {
+        url: "personajes.html#pj__dope-lemon",
+        titulo: "Personajes: Dope Lemon",
+        contenido: "dope lemon"
+    },
+    {
+        url: "personajes.html#pj__doctor-orto",
+        titulo: "Personajes: Doctor Orto",
+        contenido: "doctor orto, dr orto"
+    },
+    {
+        url: "personajes.html#pj__enano-nelson",
+        titulo: "Personajes: Enano Nelson",
+        contenido: "el enano nelson, nelson de la rosa"
+    },
+    {
+        url: "personajes.html#pj__enzombie",
+        titulo: "Personajes: Enzombie",
+        contenido: "enzo, enzombie, enzombi"
+    },
+    {
+        url: "personajes.html#pj__fabiana-de-un-buen-dia",
+        titulo: "Personajes: Fabiana de Un Buen Dia",
+        contenido: "fabiana de un buen dia, fabiana un buen dia, fabi de un buen dia, fabi un buen dia"
+    },
+    {
+        url: "personajes.html#pj__facu95",
+        titulo: "Personajes: Facu95",
+        contenido: "facu95"
+    },
+    {
+        url: "personajes.html#pj__fativ13",
+        titulo: "Personajes: FatiV13",
+        contenido: "fativ13, fatiana, fatima"
+    },
+    {
+        url: "personajes.html#pj__fiore-farisea",
+        titulo: "Personajes: Fiore Farisea",
+        contenido: "fiore farisea, fiore fari, fiorela farisea, fiorella farisea"
+    },
+    {
+        url: "personajes.html#pj__florcita-barren",
+        titulo: "Personajes: Florcita Barren",
+        contenido: "florcita barren, flor, flor barrenm flori95, florencia barren"
+    },
+    {
+        url: "personajes.html#pj__francella-pepe-argent",
+        titulo: "Personajes: Francella Pepe Argento",
+        contenido: "guillermo francella pepe argento, frachela, franchella, francela, el guillote"
+    },
+    {
+        url: "personajes.html#pj__francella-modo-incognito",
+        titulo: "Personajes: Francella Modo Incógnito",
+        contenido: "guillermo francella modo incognito, frachela, franchella, francela, el guillote"
+    },
+    {
+        url: "personajes.html#pj__francella-enano",
+        titulo: "Personajes: Francella Enano",
+        contenido: "guillermo francella enano, frachela, franchella, francela, el guillote"
+    },
+    {
+        url: "personajes.html#pj__franco666",
+        titulo: "Personajes: Franco666",
+        contenido: "franco666, franculi, rei ayanami"
+    },
+    {
+        url: "personajes.html#pj__franklin-la-tortuga",
+        titulo: "Personajes: Franklin La Tortuga",
+        contenido: "franklin la tortuga"
+    },
+    {
+        url: "personajes.html#pj__freddiereborn",
+        titulo: "Personajes: FreddieReborn",
+        contenido: "freddiereborn, freddie reborn, freddie rebourn, freddie rebourne, freddy reborn, freddy rebourn, freddy rebourne"
+    },
+    {
+        url: "personajes.html#pj__galgadog",
+        titulo: "Personajes: Galgadog",
+        contenido: "galgadog, galga, galgadogg"
+    },
+    {
+        url: "personajes.html#pj__gonna-in-the-hal",
+        titulo: "Personajes: Gonna In The Hall",
+        contenido: "gonna in the hall, gonza by travel, gona in the hall"
+    },
+    {
+        url: "personajes.html#pj__homero-simpson",
+        titulo: "Personajes: Homero Simpson",
+        contenido: "homero simpson, homer simpson, homero sinson, homer sinson"
+    },
+    {
+        url: "personajes.html#pj__kemonito",
+        titulo: "Personajes: Kemonito",
+        contenido: "kemonito"
+    },
+    {
+        url: "personajes.html#pj__sex-kramer",
+        titulo: "Personajes: Sex Kramer",
+        contenido: "sex kramer, kramer hot"
+    },
+    {
+        url: "personajes.html#pj__la-nona",
+        titulo: "Personajes: La Nona",
+        contenido: "la nona, la abuela"
+    },
+    {
+        url: "personajes.html#pj__laura-ubfal",
+        titulo: "Personajes: Laura Ubfal",
+        contenido: "laura ubfal, laura ufal, laura gran hermano"
+    },
+    {
+        url: "personajes.html#pj__...",
+        titulo: "Personajes: ...",
+        contenido: "..."
+    },
+    {
+        url: "personajes.html#pj__luis-machin",
+        titulo: "Personajes: Luis Machin",
+        contenido: "luis machin"
+    },
+    {
+        url: "personajes.html#pj__manuel-sin-apellido",
+        titulo: "Personajes: Manuel Sin Apellido",
+        contenido: "manuel sin apellido, manuel de un buen dia, manuel un buen dia"
+    },
+    {
+        url: "personajes.html#pj__marge-simpson",
+        titulo: "Personajes: Marge Simpson",
+        contenido: "marge simpson, march simpson, marge simpsons, marge los simpson"
+    },
+    {
+        url: "personajes.html#pj__matt-verona",
+        titulo: "Personajes: Matt Verona",
+        contenido: "matt verona, mateo verona, mat verona, matt gran tateiro"
+    },
+    {
+        url: "personajes.html#pj__michael-jackson",
+        titulo: "Personajes: Michael Jackson",
+        contenido: "michael jackson, michel jackson, maikel jackson, michael jacson"
+    },
+    {
+        url: "personajes.html#pj__mister-pato",
+        titulo: "Personajes: Mister Pato",
+        contenido: "mister pato, mr pato, mister duck, mr duck"
+    },
+    {
+        url: "personajes.html#pj__monique",
+        titulo: "Personajes: Monique",
+        contenido: "monique, monik, monobeatles"
+    },
+    {
+        url: "personajes.html#pj__nes-prostituta",
+        titulo: "Personajes: Nes Prostituta",
+        contenido: "el nes prostituta, el nes junior prostituta, el nes puta, la nesa juniar"
+    },
+    {
+        url: "personajes.html#pj__nes-thanos",
+        titulo: "Personajes: Nes Thanos",
+        contenido: "el nes thanos, el nes junior thanos, el nes tanos"
+    },
+    {
+        url: "personajes.html#pj__nicolino",
+        titulo: "Personajes: Nicolino",
+        contenido: "nicolino, nicokleis, doctor colino. dr colino"
+    },
+    {
+        url: "personajes.html#pj__nivekleis",
+        titulo: "Personajes: Nivekleis",
+        contenido: "nivekleis, nivelino, niveles, mister kleis, mr kleis"
+    },
+    {
+        url: "personajes.html#pj__noelia-pompa",
+        titulo: "Personajes: Noelia Pompa",
+        contenido: "noelia pompa, noe pompa, enana noelia, haceme la co"
+    },
+    {
+        url: "personajes.html#pj__...",
+        titulo: "Personajes: ...",
+        contenido: "..."
+    },
+
 
     /* PÁGINA HOME*/
     {
