@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilos.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--GOOGLE FONTS-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+        <!--FONT AWESOME-->
+        <script src="https://kit.fontawesome.com/3b60c42785.js" crossorigin="anonymous"></script>
+
+        <!--JAVASCRIPT-->
+        <script src="./scripts.js" defer></script>
+        <script src="./buscador.js" defer></script>
+
+        <title>Descargas | GTA CoffeTV</title>
+
+        <!--ICONO DE LA PÁGINA-->
+        <link rel="icon" type="image/x-icon" href="./img/icono-pagina.ico">
+    </head>
+    <body>
+        <!--********************* HEADER ************************-->
+        <header class="header">
+            <img src="./img/header-coffe-izq.png" class="header__imagen header__imagen-lados">
+            <a href="./index.html">
+                <img src="./img/header-logo-gta-coffetv.png" class="header__imagen">
+            </a>
+            <img src="./img/header-tana-der.png" class="header__imagen header__imagen-lados">
+            <h1 class="oculto">GTA CoffeTV</h1>
+        </header>
+        <main class="main">
+            <!--************************ ASIDE ************************-->
+            <aside class="aside" id="aside">
+                <!--************** BOTON CERRAR MENU LATERAL *******************-->
+                <div class="aside__boton-cerrar-menu" id="aside__boton-cerrar-menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <!--************************ NAVEGADOR ************************-->
+                <nav class="aside__contenedor navegador">
+                    <h3 class="aside__titulo">Navegación</h3>
+                    <div class="navegador__contenedor-botones">
+                        <a href="./index.html" class="navegador__botones">Home</a>
+                        <a href="./personajes.html" class="navegador__botones">Personajes</a>
+                        <a href="./lugares.html" class="navegador__botones">Lugares</a>
+                        <a href="./radios.html" class="navegador__botones">Radios</a>
+                        <a href="./galeria.html" class="navegador__botones">Galería</a>
+                        <a href="./videos.html" class="navegador__botones">Videos</a>
+                        <a href="./descargas.html" class="navegador__botones">Descargas</a>
+                    </div>
+                </nav>
+                <!--************************ BUSCADOR ************************-->
+                <div class="aside__contenedor">
+                    <h3 class="aside__titulo">Buscador</h3>
+                    <form class="buscador__contenedor" id="form-buscador">
+                        <input type="text" id="buscador__input" class="buscador__input" placeholder="Ingresar...">
+                        <button type="submit" id="buscador__boton-buscar" class="buscador__boton-buscar">Buscar</button>
+                    </form>
+                    <div id="buscador__resultados" class="buscador__resultados"></div>
+                </div>
+                
+                <!--************************ REDES ************************-->
+                <div class="aside__contenedor redes">
+                    <h3 class="aside__titulo">Redes</h3>
+                    <div class="redes__contenedor">
+                        <a href="https://www.youtube.com/@Tateirotateiro" target="_blank" class="redes__link">
+                            <i class="fa-brands fa-youtube"></i>
+                            <h4 class="redes__titulos" >Canal Secundario de CoffeTV</h4>
+                        </a>
+                        <a href="https://www.youtube.com/coffetv" target="_blank" class="redes__link">
+                            <i class="fa-brands fa-youtube"></i>
+                            <h4 class="redes__titulos" >Canal Principal de CoffeTV</h4>
+                        </a>
+                        <a href="https://www.twitch.tv/tateirotv" target="_blank" class="redes__link">
+                            <i class="fa-brands fa-twitch"></i>
+                            <h4 class="redes__titulos" >Canal de Twitch de CoffeTV</h4>
+                        </a>
+                        <a href="https://www.instagram.com/coffetv__/" target="_blank" class="redes__link">
+                            <i class="fa-brands fa-instagram"></i>
+                            <h4 class="redes__titulos">Instagram de CoffeTV</h4>
+                        </a>
+                        <a href="https://www.instagram.com/voglinn" target="_blank" class="redes__link">
+                            <i class="fa-brands fa-instagram"></i>
+                            <h4 class="redes__titulos" >Instagram de Voglinn</h4>
+                        </a>
+                        <a href="https://discord.gg/YhChAcWmGD" target="_blank" class="redes__link">
+                            <i class="fa-brands fa-discord"></i>
+                            <h4 class="redes__titulos" >Discord de CoffeTV</h4>
+                        </a>
+                        <a href="https://x.com/coffetv_" target="_blank" class="redes__link">
+                            <i class="fa-brands fa-x-twitter"></i>
+                            <h4 class="redes__titulos" >Twitter de CoffeTV</h4>
+                        </a>
+                    </div>
+                </div>
+
+            </aside>
+
+            <div class="boton-mostrar-menu-lateral" id="boton-mostrar-menu-lateral">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div class="seccion-principal">
+                <h2 class="titulo-ppal">Descargas</h2>
+                <div class="general__contenedor-articulos">
+                    <h3 class="articulos__categoria" id="descargas__juego">Descarga del Juego</h3>
+
+                    <!--********************** ARTÍCULO CON LINK DE DESCARGA *************************-->
+                    <article class="articulos">
+                        <h3 class="titulos-articulos" id="descargas__link-de-descarga">Link de descarga</h3>
+                        <p class="parrafos-articulos">A continuación, tenés disponible la descarga del juego original del GTA San Andreas junto con los 
+                            archivos del mod GTA CoffeTV. Si no te funciona la descarga por Mega, abajo hay un link alternativo de Google Drive.
+                        </p>
+                        <p class="parrafos-articulos">Más abajo, hay una guía de instalación para el juego.</p>
+                        <p class="parrafos-articulos"><b>Requisitos mínimos recomendados: </b>Sistema Operativo Windows XP en adelante, 4 GB de RAM, 10GB de espacio en disco duro.</p>
+                        <div class="descargas__contenedor-link">
+                            <a class="links-generales links-descargas" href="https://mega.nz/file/7qo0VDpZ#ebwZ_lpSfZJ9YaOB3gvtgwm2wIsZiFOXw_ej4eCLoY0" target="_blank">
+                                <img class="descargas__iconos" src="./img/descargas/icono_mega.png">
+                                <p>Descargar desde Mega</p>
+                            </a>
+                        </div>
+                        <div class="descargas__contenedor-link">
+                            <a class="links-generales links-descargas" href="https://drive.google.com/file/d/1faJS3gAreGIGHtoCEdqRX9f9r8SNkQfU/view?usp=sharing" target="_blank">
+                                <img class="descargas__iconos" src="./img/descargas/icono_google-drive.png">
+                                <p>Descargar desde Google Drive</p>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!--********************** ARTÍCULO CON LINK DE CAFECITO *************************-->
+                    <article class="articulos">
+                        <h3 class="titulos-articulos" id="descargas__link-de-cafecito">Cafecito</h3>
+                        <p class="parrafos-articulos">La descarga del juego es gratuita! Pero si te gustó el juego y querés colaborar conmigo comprándome cafecitos, 
+                            podés hacerlo en el siguiente link:
+                        </p>
+                        <div class="descargas__contenedor-link">
+                            <a class="links-generales links-descargas" href="https://cafecito.app/voglinn" target="_blank">
+                                <img class="descargas__iconos" src="./img/descargas/icono_cafecito.png">
+                                <p>Comprame un cafecito!</p>
+                            </a>
+                        </div>
+                    </article>
+                    <!--********************** ARTÍCULO GUIA DE INSTALACION *************************-->
+                    <article class="descargas__articulos">
+                        <h3 class="titulos-articulos" id="descargas__guia-de-instalacion">Guía de instalación</h3>
+                        <p class="parrafos-articulos"><b>1- Instalar el juego base:</b></p>
+                        <img class="descargas__img-instrucciones" src="./img/descargas/instrucciones_extraer-rar.png">
+                        <p class="parrafos-articulos">Extraer el archivo .rar en una carpeta aparte. Si no tenés un programa para extraer archivos .rar, 
+                            podés descargarte el programa WinRAR desde su página oficial: <a class="links-generales" href="https://www.winrar.es/descargas" target="_blank">
+                                https://www.winrar.es/descargas</a>. Otras alternativas para extraer archivos .rar son los programas 7-Zip, PeaZip y UnRAR.
+                        </p>
+                        <img class="descargas__img-instrucciones" src="./img/descargas/instrucciones_click-install.png">
+                        <p class="parrafos-articulos">Ir a Instalador GTA SA puro, GTA San Andreas y hacer click en "Install.exe".</p>
+                        <img class="descargas__img-instrucciones" src="./img/descargas/instrucciones_guardar-documentos.png">
+                        <p class="parrafos-articulos">Seguir los pasos. Cuando pida la carpeta en donde instalar el juego, recomiendo que se instale en la carpeta 
+                            "Documentos", NO EN ARCHIVOS DE PROGRAMA. Esto es para poder instalar los mods sin problemas.</p>
+                        <p class="parrafos-articulos">Si te pide instalar cosas como "DirectX", aceptar e instalar, ya que eso es importante para que el 
+                            juego funcione correctamente.</p>
+                        <img class="descargas__img-instrucciones" src="./img/descargas/instrucciones_no-registrarse.png">
+                        <p class="parrafos-articulos">Hacer click en "No" cuando pide si querés registrarte.</p>
+                        <img class="descargas__img-instrucciones" src="./img/descargas/instrucciones_no-acceso-directo.png">
+                        <p class="parrafos-articulos">No crear el acceso directo todavía. Si aceptaste crear acceso directo, borralo del escritorio y después lo creás manualmente.</p>
+                        <img class="descargas__img-instrucciones" src="./img/descargas/instrucciones_esperar.png">
+                        <p class="parrafos-articulos">Seguir y esperar a que se termine de instalar.</p>
+                        <p class="parrafos-articulos"><b>2- Instalar los mods:</b></p>
+                        <img class="descargas__img-instrucciones" src="./img/descargas/instrucciones_arrastrar-mods.png">
+                        <p class="parrafos-articulos">Arrastrar los contenidos de la carpeta "Mods" en la carpeta en donde se instaló el juego, que se llama GTA San Andreas, y debería 
+                            estar en la carpeta Documentos o en la carpeta en donde guardaste el juego. Aceptar y reemplazar todo lo que solicite.</p>
+                        <img class="descargas__img-instrucciones" src="./img/descargas/instrucciones_crear-acceso-directo.png">
+                        <p class="parrafos-articulos">Crear el acceso directo haciendo click derecho en "gta_sa.exe", Eviar a, Escritorio. Si estás usando Windows 11, 
+                        tenés que hacer click en "Mostrar más opciones" para que te aparezca la opción "Enviar a".
+                        </p>
+                    </article>
+                </div>
+            </div> <!-- cierra sección principal-->
+        </main>
+
+    </body>
+</html>
