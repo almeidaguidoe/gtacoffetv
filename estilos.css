@@ -20,6 +20,7 @@ html {
     color: #07ad4c;
     font-weight: 600;
     transition: .5s ease all;
+    overflow-wrap: anywhere;
 }
 
 .links-generales:hover {
@@ -251,6 +252,28 @@ html {
 
 .redes__link i{
     font-size: 60px;
+}
+
+/*----------------- PERSONAJE DEL DÍA ----------*/
+
+.personaje-del-dia__contendor {
+    background: #ee9c9c;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.personaje-del-dia__contendor img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.personaje-del-dia__contendor h4 {
+    font-size: 1.2em;
 }
 
 /*----------------- BOTON MOSTRAR MENU LATERAL ----------*/
@@ -1168,6 +1191,7 @@ html {
     padding: 15px;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .descargas__articulos p {
@@ -1201,11 +1225,15 @@ html {
 
 .descargas__iconos {
     max-width: 200px;
+    width: 100%;
+    height: auto;
 }
 
 .descargas__img-instrucciones {
     border-radius: 15px;
     max-width: 1000px;
+    width: 100%;
+    height: auto;
     align-self: center;
     margin: 15px;
 }
@@ -1351,7 +1379,7 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('./img/rep-musica-fondo.png');
+    background: url('./img/rep-musica-fondo.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
