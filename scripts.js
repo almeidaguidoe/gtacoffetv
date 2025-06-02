@@ -79,97 +79,99 @@ const personajes = [
         imagen: "./img/personajes/personajes-coffe-1.jpg"
     },
     {
-        nombre: "Ale Escuchando",
-        imagen: "./img/personajes/personajes-ale-escuchando.jpg"
+        nombre: "Tití Fernandez",
+        imagen: "./img/personajes/personajes-titi-fernandez.jpg"
     },
     {
-        nombre: "Anna Cubick",
-        imagen: "./img/personajes/personajes-anna-cubick.jpg"
+        nombre: "Dibu",
+        imagen: "./img/personajes/personajes-dibu.jpg"
     },
+    
     {
         nombre: "Arnold Schwarzenegger",
         imagen: "./img/personajes/personajes-arnold-schwarzenegger2.jpg"
     },
-    {
-        nombre: "Artisteando",
-        imagen: "./img/personajes/personajes-artisteando.jpg"
-    },
+    
     {
         nombre: "Baicito",
         imagen: "./img/personajes/personajes-baicito.jpg"
     },
     {
-        nombre: "Bella",
-        imagen: "./img/personajes/personajes-bella.jpg"
+        nombre: "Caro Dulce",
+        imagen: "./img/personajes/personajes-caro-dulce.jpg"
     },
+    
     {
         nombre: "Bloq Mayuss",
         imagen: "./img/personajes/personajes-bloq-mayuss.jpg"
     },
     {
-        nombre: "Bloq Mayuss Tecla",
-        imagen: "./img/personajes/personajes-bloq-mayuss-tecla.jpg"
+        nombre: "Policía Twitch en moto",
+        imagen: "./img/personajes/personajes-policia-twitch-en-moto.jpg"
     },
+    {
+        nombre: "Francella Enano",
+        imagen: "./img/personajes/personajes-francella-enano.jpg"
+    },
+    
     {
         nombre: "Butterfly Meh",
         imagen: "./img/personajes/personajes-butterfly-meh-1.jpg"
     },
+    
     {
-        nombre: "Caio Gasolero",
-        imagen: "./img/personajes/personajes-caio-gasolero.jpg"
-    },
-    {
-        nombre: "Candelixx",
-        imagen: "./img/personajes/personajes-candelixx.jpg"
+        nombre: "El Bibel",
+        imagen: "./img/personajes/personajes-el-bibel.jpg"
     },
     {
         nombre: "Cande Ri",
         imagen: "./img/personajes/personajes-cande-ri.jpg"
     },
-    {
-        nombre: "Caro Dulce",
-        imagen: "./img/personajes/personajes-caro-dulce.jpg"
-    },
+    
     {
         nombre: "Caro MejoresCortos15",
         imagen: "./img/personajes/personajes-caro-mejorescortos15.jpg"
     },
+    
     {
-        nombre: "Chambuchito de Miga",
-        imagen: "./img/personajes/personajes-chambuchito-de-miga.jpg"
+        nombre: "Silgonz",
+        imagen: "./img/personajes/personajes-silgonz-1.jpg"
     },
     {
         nombre: "Chimuelo",
         imagen: "./img/personajes/personajes-chimuelo.jpg"
     },
     {
+        nombre: "Tortafrita",
+        imagen: "./img/personajes/personajes-tortafrita.jpg"
+    },
+    {
         nombre: "Corazón de Pizza",
         imagen: "./img/personajes/personajes-corazon-de-pizza.jpg"
     },
-    {
-        nombre: "Coscu",
-        imagen: "./img/personajes/personajes-coscu-1.jpg"
-    },
+    
     {
         nombre: "Dark Tana",
         imagen: "./img/personajes/personajes-dark-tana.jpg"
     },
+    
     {
-        nombre: "Dibu",
-        imagen: "./img/personajes/personajes-dibu.jpg"
+        nombre: "Luis Machin",
+        imagen: "./img/personajes/personajes-luis-machin.jpg"
     },
     {
         nombre: "Doctor Orto",
         imagen: "./img/personajes/personajes-doctor-orto.jpg"
     },
     {
+        nombre: "Hincha de Brasil",
+        imagen: "./img/personajes/personajes-hincha-brasil-1.jpg"
+    },
+    {
         nombre: "Dogi The Dog",
         imagen: "./img/personajes/personajes-dogi-the-dog-1.jpg"
     },
-    {
-        nombre: "Dope Lemon",
-        imagen: "./img/personajes/personajes-dope-lemon.jpg"
-    },
+    
     {
         nombre: "Edduerdo",
         imagen: "./img/personajes/personajes-edduerdo-1.jpg"
@@ -179,24 +181,26 @@ const personajes = [
         imagen: "./img/personajes/personajes-ejercito-youtube.jpg"
     },
     {
-        nombre: "El Bibel",
-        imagen: "./img/personajes/personajes-el-bibel.jpg"
+        nombre: "Galgadog",
+        imagen: "./img/personajes/personajes-galgadog.jpg"
     },
+    
     {
         nombre: "El Duende Verde",
         imagen: "./img/personajes/personajes-el-duende-verde-1.jpg"
     },
     {
+        nombre: "John Frustrante",
+        imagen: "./img/personajes/personajes-john-frustrante-1.jpg"
+    },
+    {
         nombre: "El Nes Junior",
         imagen: "./img/personajes/personajes-el-nes-junior-1.jpg"
     },
+    
     {
-        nombre: "El Pichi Ciego",
-        imagen: "./img/personajes/personajes-el-pichi-ciego.jpg"
-    },
-    {
-        nombre: "Enano Nelson",
-        imagen: "./img/personajes/personajes-enano-nelson.jpg"
+        nombre: "Bella",
+        imagen: "./img/personajes/personajes-bella.jpg"
     },
     {
         nombre: "Enzombie",
@@ -206,37 +210,43 @@ const personajes = [
         nombre: "Fabiana de Un Buen Día",
         imagen: "./img/personajes/personajes-fabiana-de-un-buen-dia.jpg"
     },
-    {
-        nombre: "Facu95",
-        imagen: "./img/personajes/personajes-facu95.jpg"
-    },
+    
     {
         nombre: "FatiV13",
         imagen: "./img/personajes/personajes-fativ13.jpg"
+    },
+    {
+        nombre: "Enano Nelson",
+        imagen: "./img/personajes/personajes-enano-nelson.jpg"
     },
     {
         nombre: "Fiore Farisea",
         imagen: "./img/personajes/personajes-fiore-farisea.jpg"
     },
     {
+        nombre: "Pequeño Timmy",
+        imagen: "./img/personajes/personajes-pequeño-timmy.jpg"
+    },
+    {
         nombre: "Florcita Barren",
         imagen: "./img/personajes/personajes-florcita-barren.jpg"
     },
-    {
-        nombre: "Francella Enano",
-        imagen: "./img/personajes/personajes-francella-enano.jpg"
-    },
+    
     {
         nombre: "Francella Incógnito",
         imagen: "./img/personajes/personajes-francella-modo-incognito.jpg"
     },
     {
-        nombre: "Francella Pepe Argento",
-        imagen: "./img/personajes/personajes-francella-pepe-argento.jpg"
+        nombre: "Artisteando",
+        imagen: "./img/personajes/personajes-artisteando.jpg"
     },
     {
         nombre: "Franco666",
         imagen: "./img/personajes/personajes-franco666.jpg"
+    },
+    {
+        nombre: "Oye Pablo",
+        imagen: "./img/personajes/personajes-oye-pablo.jpg"
     },
     {
         nombre: "Franklin La Tortuga",
@@ -246,9 +256,10 @@ const personajes = [
         nombre: "Freddie Reborn",
         imagen: "./img/personajes/personajes-freddiereborn.jpg"
     },
+    
     {
-        nombre: "Galgadog",
-        imagen: "./img/personajes/personajes-galgadog.jpg"
+        nombre: "Vuelo de Tortuga",
+        imagen: "./img/personajes/personajes-vuelo-de-tortuga-1.jpg"
     },
     {
         nombre: "Gonna In the Hall",
@@ -258,78 +269,83 @@ const personajes = [
         nombre: "Gus Fring",
         imagen: "./img/personajes/personajes-gus-fring.jpg"
     },
-    {
-        nombre: "Hincha de Brasil",
-        imagen: "./img/personajes/personajes-hincha-brasil-1.jpg"
-    },
-    {
-        nombre: "Hincha de Inglaterra",
-        imagen: "./img/personajes/personajes-hincha-inglaterra1-1.jpg"
-    },
+    
+    
     {
         nombre: "Hincha de Inglaterra",
         imagen: "./img/personajes/personajes-hincha-inglaterra2-1.jpg"
     },
     {
+        nombre: "Nes Prostituta",
+        imagen: "./img/personajes/personajes-nes-prostituta.jpg"
+    },
+    {
         nombre: "Homero Simpson",
         imagen: "./img/personajes/personajes-homero-simpson.jpg"
     },
+    
     {
-        nombre: "John Frustrante",
-        imagen: "./img/personajes/personajes-john-frustrante-1.jpg"
+        nombre: "Voglinn Goblin",
+        imagen: "./img/personajes/personajes-voglinn-goblin.jpg"
     },
     {
         nombre: "Kemonito",
         imagen: "./img/personajes/personajes-kemonito.jpg"
     },
     {
+        nombre: "Shaggy",
+        imagen: "./img/personajes/personajes-shaggy-1.jpg"
+    },
+    {
         nombre: "Kramer Cinema",
         imagen: "./img/personajes/personajes-kramer-1.jpg"
+    },
+    {
+        nombre: "Rita Alejandra",
+        imagen: "./img/personajes/personajes-rita-alejandra-1.jpg"
     },
     {
         nombre: "La Jabru",
         imagen: "./img/personajes/personajes-la-jabru-1.jpg"
     },
+    
     {
-        nombre: "La Nona",
-        imagen: "./img/personajes/personajes-la-nona.jpg"
+        nombre: "Agente SWAT Paramount",
+        imagen: "./img/personajes/personajes-swat-paramount.jpg"
     },
-    {
-        nombre: "La Tana Lamorte",
-        imagen: "./img/personajes/personajes-la-tana-lamorte-1.jpg"
-    },
+    
     {
         nombre: "La Tiendita Viajera",
         imagen: "./img/personajes/personajes-la-tiendita-viajera.jpg"
     },
-    {
-        nombre: "Laura Ubfal",
-        imagen: "./img/personajes/personajes-laura-ubfal.jpg"
-    },
+    
     {
         nombre: "Lord Valdomero",
         imagen: "./img/personajes/personajes-lord-valdomero.jpg"
     },
+    
     {
-        nombre: "Luis Machin",
-        imagen: "./img/personajes/personajes-luis-machin.jpg"
+        nombre: "Voglinn Prostituta",
+        imagen: "./img/personajes/personajes-voglinn-prostituta.jpg"
     },
     {
         nombre: "Manuel Sin Apellido de Un Buen Día",
         imagen: "./img/personajes/personajes-manuel-sin-apellido.jpg"
     },
     {
-        nombre: "Marge Simpson",
-        imagen: "./img/personajes/personajes-marge-simpson.jpg"
+        nombre: "Caio Gasolero",
+        imagen: "./img/personajes/personajes-caio-gasolero.jpg"
     },
+    
     {
         nombre: "Matt Verona",
         imagen: "./img/personajes/personajes-matt-verona.jpg"
     },
     {
-        nombre: "Meli Yecca",
-        imagen: "./img/personajes/personajes-meli-yecca-1.jpg"
+        nombre: "Chambuchito de Miga",
+        imagen: "./img/personajes/personajes-chambuchito-de-miga.jpg"
     },
+    
     {
         nombre: "Michael Jackson",
         imagen: "./img/personajes/personajes-michael-jackson.jpg"
@@ -342,17 +358,23 @@ const personajes = [
         nombre: "Monique",
         imagen: "./img/personajes/personajes-monique.jpg"
     },
-    {
-        nombre: "Nes Prostituta",
-        imagen: "./img/personajes/personajes-nes-prostituta.jpg"
-    },
+    
     {
         nombre: "Nes Thanos",
         imagen: "./img/personajes/personajes-nes-thanos.jpg"
     },
     {
+        nombre: "Coscu",
+        imagen: "./img/personajes/personajes-coscu-1.jpg"
+    },
+    
+    {
         nombre: "Nicolino",
         imagen: "./img/personajes/personajes-nicolino.jpg"
+    },
+    {
+        nombre: "Ale Escuchando",
+        imagen: "./img/personajes/personajes-ale-escuchando.jpg"
     },
     {
         nombre: "Nivekleis",
@@ -362,25 +384,21 @@ const personajes = [
         nombre: "Enana Noelia",
         imagen: "./img/personajes/personajes-noelia-pompa.jpg"
     },
-    {
-        nombre: "Oye Pablo",
-        imagen: "./img/personajes/personajes-oye-pablo.jpg"
-    },
-    {
-        nombre: "Pequeño Timmy",
-        imagen: "./img/personajes/personajes-pequeño-timmy.jpg"
-    },
+    
+    
     {
         nombre: "Policía Twitch a pie",
         imagen: "./img/personajes/personajes-policia-twitch-a-pie.jpg"
     },
     {
-        nombre: "Policía Twitch en moto",
-        imagen: "./img/personajes/personajes-policia-twitch-en-moto.jpg"
+        nombre: "La Nona",
+        imagen: "./img/personajes/personajes-la-nona.jpg"
     },
+    
+    
     {
-        nombre: "Rita Alejandra",
-        imagen: "./img/personajes/personajes-rita-alejandra-1.jpg"
+        nombre: "Dope Lemon",
+        imagen: "./img/personajes/personajes-dope-lemon.jpg"
     },
     {
         nombre: "Roma Vargass",
@@ -391,17 +409,19 @@ const personajes = [
         imagen: "./img/personajes/personajes-rowletnom.jpg"
     },
     {
-        nombre: "La Rosalia",
-        imagen: "./img/personajes/personajes-rosalia.jpg"
+        nombre: "Meli Yecca",
+        imagen: "./img/personajes/personajes-meli-yecca-1.jpg"
     },
+    
     {
         nombre: "Scarlatta Singer",
         imagen: "./img/personajes/personajes-scarlatta-singer.jpg"
     },
     {
-        nombre: "Scooby Doo",
-        imagen: "./img/personajes/personajes-scooby-doo-1.jpg"
+        nombre: "Facu95",
+        imagen: "./img/personajes/personajes-facu95.jpg"
     },
+    
     {
         nombre: "Sebast912",
         imagen: "./img/personajes/personajes-sebast912.jpg"
@@ -411,57 +431,70 @@ const personajes = [
         imagen: "./img/personajes/personajes-sex-kramer.jpg"
     },
     {
-        nombre: "Shaggy",
-        imagen: "./img/personajes/personajes-shaggy-1.jpg"
+        nombre: "Marge Simpson",
+        imagen: "./img/personajes/personajes-marge-simpson.jpg"
     },
+    
+    
     {
-        nombre: "Silgonz",
-        imagen: "./img/personajes/personajes-silgonz-1.jpg"
+        nombre: "Scooby Doo",
+        imagen: "./img/personajes/personajes-scooby-doo-1.jpg"
     },
+    
     {
         nombre: "Storm Rita",
         imagen: "./img/personajes/personajes-storm-rita.jpg"
     },
     {
-        nombre: "Agente SWAT Paramount",
-        imagen: "./img/personajes/personajes-swat-paramount.jpg"
+        nombre: "Anna Cubick",
+        imagen: "./img/personajes/personajes-anna-cubick.jpg"
     },
+    
     {
         nombre: "Tabla Pecosa",
         imagen: "./img/personajes/personajes-tabla-pecosa.jpg"
     },
+    
     {
-        nombre: "Tití Fernandez",
-        imagen: "./img/personajes/personajes-titi-fernandez.jpg"
+        nombre: "Hincha de Inglaterra",
+        imagen: "./img/personajes/personajes-hincha-inglaterra1-1.jpg"
     },
+    
     {
-        nombre: "Tortafrita",
-        imagen: "./img/personajes/personajes-tortafrita.jpg"
+        nombre: "La Rosalia",
+        imagen: "./img/personajes/personajes-rosalia.jpg"
     },
     {
         nombre: "TortaRita",
         imagen: "./img/personajes/personajes-torta-rita.jpg"
     },
     {
+        nombre: "Laura Ubfal",
+        imagen: "./img/personajes/personajes-laura-ubfal.jpg"
+    },
+    {
+        nombre: "Francella Pepe Argento",
+        imagen: "./img/personajes/personajes-francella-pepe-argento.jpg"
+    },
+    {
         nombre: "Virginia Lagos",
         imagen: "./img/personajes/personajes-virginia-lagos.jpg"
+    },
+    {
+        nombre: "La Tana Lamorte",
+        imagen: "./img/personajes/personajes-la-tana-lamorte-1.jpg"
     },
     {
         nombre: "Voglinn",
         imagen: "./img/personajes/personajes-voglinn.jpg"
     },
+    
+    
     {
-        nombre: "Voglinn Goblin",
-        imagen: "./img/personajes/personajes-voglinn-goblin.jpg"
+        nombre: "Bloq Mayuss Tecla",
+        imagen: "./img/personajes/personajes-bloq-mayuss-tecla.jpg"
     },
-    {
-        nombre: "Voglinn Prostituta",
-        imagen: "./img/personajes/personajes-voglinn-prostituta.jpg"
-    },
-    {
-        nombre: "Vuelo de Tortuga",
-        imagen: "./img/personajes/personajes-vuelo-de-tortuga-1.jpg"
-    },
+    
     {
         nombre: "Wazka Burbuja",
         imagen: "./img/personajes/personajes-wazka-burbuja.jpg"
