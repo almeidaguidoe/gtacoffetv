@@ -88,7 +88,7 @@ const personajes = [
     },
     {
         nombre: "Arnold Schwarzenegger",
-        imagen: "./img/personajes/personajes-arnold-schwarzenegger.jpg"
+        imagen: "./img/personajes/personajes-arnold-schwarzenegger2.jpg"
     },
     {
         nombre: "Artisteando",
