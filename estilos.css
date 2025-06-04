@@ -1238,6 +1238,17 @@ html {
     margin: 15px;
 }
 
+.rep-videos__contenedor-videosYT {
+    position: relative;
+    max-width: 470px;
+    border-radius: 15px;
+    overflow: hidden;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
 /*################# REPRODUCTORES DE VIDEO ################*/
 
 .rep-videos__contenedor {
